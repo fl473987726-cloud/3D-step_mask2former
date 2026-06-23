@@ -1,0 +1,214 @@
+test_step 目录整理说明
+=====================
+
+整理日期：2026-06-08
+整理原则：
+1. 只整理顶层散落的 Python 脚本，不移动大型数据集、渲染结果、STEP 模型和标注输出目录。
+2. 保留原有功能目录 Annotation_Tools、Dataset_Process、data_check。
+3. 新增 Render_Tools、dev_tests、legacy_tools 目录，按功能归类脚本。
+4. 由于部分脚本内部存在硬编码路径，移动后如需运行，可能需要检查脚本中的相对/绝对路径。
+
+
+一、当前主要功能目录
+------------------
+
+1. Annotation_Tools/
+   作用：标注、STEP 染色、推理视图生成、RGB 编码视图生成等核心工具。
+
+   主要文件：
+   - label_tool_instance.py
+     实例标注主工具。支持导入 STEP、实例标注、导出灰度图、多灰度实例掩码、class_map，并支持 12/24 视角选择。
+
+   - generate_inference_views.py
+     生成推理数据集：语义染色图 semantic_views + 独立着色图 unique_views。
+
+   - generate_encoded_face_views.py
+     新增 RGB 编码视图生成工具。输入 STEP 文件夹，输出 encoded_views、face_encoding_map.json、camera_views.json。
+     当前编码规则：
+       背景 = 255,255,255
+       R = 面类型编码 Plane/Cylinder/Cone/Sphere/Other
+       G = face_id 低 8 位
+       B = face_id 高 8 位
+       face_id = G + (B << 8)
+
+   - color_step_12face_edge.py
+     生成 12 视角面/边语义染色结果。
+
+   - color_step_24face_edge.py
+     生成 24 视角面/边语义染色结果。24 视角使用正二十四面体面法向方向。
+
+   - jsonlabel.py
+     JSON 标注相关工具。
+
+   - label_tool_caption.py
+     文本/描述类标注工具或早期标注工具。
+
+
+2. Dataset_Process/
+   作用：数据增强、数据集划分、数据集合并等。
+
+   主要文件：
+   - split_augmented_dataset.py
+     对 semantic_views、masks、class_map.json 做同步增强和 train/test 划分。
+
+   - split_merged_dataset.py
+     合并后数据集划分脚本。
+
+   - augment_dataset.py
+     早期数据增强脚本。
+
+
+3. data_check/
+   作用：数据质量检查、颜色检查、标签验证。
+
+   主要文件：
+   - verify_instance_labels.py
+     输入实例掩码图 + class_map.json，输出实例可视化和语义可视化，用于检查标签是否正确。
+
+   - analyze_colors.py
+     分析图片中的 RGB 颜色分布，检查语义染色图或编码图是否出现异常颜色。
+
+   - check_rgb_duplicates.py
+     检查 RGB 是否重复。
+
+   - extract_colors.py
+     提取图片颜色区域和连通区域。
+
+   - pixel_valid_check.py
+     检查渲染像素颜色是否在预期颜色集合内。
+
+   - verify_colors.py
+     颜色验证脚本。
+
+
+4. Render_Tools/
+   作用：通用 STEP 渲染、十二面体视角渲染、彩色视角渲染等早期/独立渲染工具。
+
+   主要文件：
+   - render_step_views.py
+     读取染色 STEP 并渲染视角图片。
+
+   - render_dodecahedron_views.py
+     生成 12 视角灰度/增强渲染图。
+
+   - render_dodecahedron_views_color.py
+     生成 12 视角彩色渲染图。
+
+
+5. dev_tests/
+   作用：开发调试和临时测试脚本。
+
+   主要文件：
+   - test_render.py
+     渲染测试脚本。
+
+   - test_gltf.py
+     glTF 转换/渲染测试脚本。
+
+
+6. legacy_tools/
+   作用：预留目录，用于后续存放废弃但暂时不删除的旧脚本。
+   当前没有放入文件。
+
+
+二、本次移动的文件
+----------------
+
+从 test_step 顶层移动到 Render_Tools/：
+- render_step_views.py
+- render_dodecahedron_views.py
+- render_dodecahedron_views_color.py
+
+从 test_step 顶层移动到 Dataset_Process/：
+- augment_dataset.py
+
+从 test_step 顶层移动到 data_check/：
+- check_rgb_duplicates.py
+- extract_colors.py
+- pixel_valid_check.py
+- verify_colors.py
+
+从 test_step 顶层移动到 dev_tests/：
+- test_render.py
+- test_gltf.py
+
+整理后，test_step 顶层不再保留散落的 .py 脚本。
+
+
+三、未移动的大型目录/数据目录
+--------------------------
+
+以下目录保持原位置，避免破坏数据路径：
+- slot_test01/
+- slot_test01_colored/
+- slot_test01_colored_renders/
+- test_datasets/
+- encoded_inference_dataset/
+- inference_dataset/
+- 各类 *_renders、*_colored、数据集输出目录
+
+这些目录主要是 STEP 原始模型、渲染结果、标注数据集、推理数据集或实验输出。
+
+
+四、建议后续使用方式
+------------------
+
+1. 实例标注和掩码导出：
+   使用 Annotation_Tools/label_tool_instance.py
+
+2. 生成语义染色图 + 独立着色图：
+   使用 Annotation_Tools/generate_inference_views.py
+
+3. 生成 RGB 编码图：
+   使用 Annotation_Tools/generate_encoded_face_views.py
+
+4. 标签和颜色检查：
+   使用 data_check/ 下脚本
+
+5. 数据增强和划分：
+   使用 Dataset_Process/ 下脚本
+
+6. 普通渲染测试：
+   使用 Render_Tools/ 或 dev_tests/ 下脚本
+
+
+五、注意事项
+------------
+
+1. 部分脚本内部仍然使用绝对路径，例如：
+   E:\aaaa-WUT\lw\ASCCAD\test_step\...
+   移动脚本不会影响绝对路径，但如果脚本内部使用相对路径，需要重新检查。
+
+2. 不建议随意移动 test_datasets、slot_test01、encoded_inference_dataset 等数据目录。
+
+3. 如果后续新增脚本，建议按功能放入：
+   - 标注/染色/推理生成：Annotation_Tools
+   - 数据增强/划分：Dataset_Process
+   - 数据检查/验证：data_check
+   - 渲染工具：Render_Tools
+   - 临时测试：dev_tests
+
+
+六、当前推荐主流程
+----------------
+
+STEP 模型输入
+  ↓
+Annotation_Tools/generate_encoded_face_views.py
+  输出 encoded_views + face_encoding_map.json + camera_views.json
+  ↓
+二维模型训练/推理
+  ↓
+data_check/verify_instance_labels.py 或 analyze_colors.py 检查结果
+  ↓
+Dataset_Process/split_augmented_dataset.py 做增强和划分
+
+或者：
+
+STEP 模型输入
+  ↓
+Annotation_Tools/label_tool_instance.py
+  手动实例标注 + 多灰度掩码 + class_map.json
+  ↓
+Dataset_Process/split_augmented_dataset.py
+  同步增强 semantic_views / masks / class_map.json

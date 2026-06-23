@@ -1,0 +1,2186 @@
+{
+  "000001.png": {
+    "model_name": "1_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/1_stp.stp",
+    "view_index": 1,
+    "direction": [
+      0,
+      0.5257311121191336,
+      0.85065080835204
+    ],
+    "camera_position": [
+      41.5,
+      141.40704691766427,
+      172.31205127965796
+    ],
+    "focal_point": [
+      41.5,
+      10.5,
+      -39.5
+    ],
+    "viewup": [
+      -0.0,
+      -0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 45.650000000000006
+  },
+  "000002.png": {
+    "model_name": "1_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/1_stp.stp",
+    "view_index": 2,
+    "direction": [
+      0,
+      -0.5257311121191336,
+      0.85065080835204
+    ],
+    "camera_position": [
+      41.5,
+      -120.40704691766427,
+      172.31205127965796
+    ],
+    "focal_point": [
+      41.5,
+      10.5,
+      -39.5
+    ],
+    "viewup": [
+      -0.0,
+      0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 45.650000000000006
+  },
+  "000003.png": {
+    "model_name": "1_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/1_stp.stp",
+    "view_index": 3,
+    "direction": [
+      0,
+      0.5257311121191336,
+      -0.85065080835204
+    ],
+    "camera_position": [
+      41.5,
+      141.40704691766427,
+      -251.31205127965796
+    ],
+    "focal_point": [
+      41.5,
+      10.5,
+      -39.5
+    ],
+    "viewup": [
+      0.0,
+      0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 45.650000000000006
+  },
+  "000004.png": {
+    "model_name": "1_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/1_stp.stp",
+    "view_index": 4,
+    "direction": [
+      0,
+      -0.5257311121191336,
+      -0.85065080835204
+    ],
+    "camera_position": [
+      41.5,
+      -120.40704691766427,
+      -251.31205127965796
+    ],
+    "focal_point": [
+      41.5,
+      10.5,
+      -39.5
+    ],
+    "viewup": [
+      0.0,
+      -0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 45.650000000000006
+  },
+  "000005.png": {
+    "model_name": "1_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/1_stp.stp",
+    "view_index": 5,
+    "direction": [
+      0.5257311121191336,
+      0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      172.40704691766427,
+      222.31205127965796,
+      -39.5
+    ],
+    "focal_point": [
+      41.5,
+      10.5,
+      -39.5
+    ],
+    "viewup": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "parallel_scale": 44.904403746246615
+  },
+  "000006.png": {
+    "model_name": "1_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/1_stp.stp",
+    "view_index": 6,
+    "direction": [
+      -0.5257311121191336,
+      0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      -89.40704691766427,
+      222.31205127965796,
+      -39.5
+    ],
+    "focal_point": [
+      41.5,
+      10.5,
+      -39.5
+    ],
+    "viewup": [
+      -0.0,
+      0.0,
+      1.0
+    ],
+    "parallel_scale": 44.904403746246615
+  },
+  "000007.png": {
+    "model_name": "1_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/1_stp.stp",
+    "view_index": 7,
+    "direction": [
+      0.5257311121191336,
+      -0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      172.40704691766427,
+      -201.31205127965796,
+      -39.5
+    ],
+    "focal_point": [
+      41.5,
+      10.5,
+      -39.5
+    ],
+    "viewup": [
+      0.0,
+      -0.0,
+      1.0
+    ],
+    "parallel_scale": 44.904403746246615
+  },
+  "000008.png": {
+    "model_name": "1_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/1_stp.stp",
+    "view_index": 8,
+    "direction": [
+      -0.5257311121191336,
+      -0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      -89.40704691766427,
+      -201.31205127965796,
+      -39.5
+    ],
+    "focal_point": [
+      41.5,
+      10.5,
+      -39.5
+    ],
+    "viewup": [
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    "parallel_scale": 44.904403746246615
+  },
+  "000009.png": {
+    "model_name": "1_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/1_stp.stp",
+    "view_index": 9,
+    "direction": [
+      0.85065080835204,
+      0,
+      0.5257311121191336
+    ],
+    "camera_position": [
+      253.31205127965796,
+      10.5,
+      91.40704691766427
+    ],
+    "focal_point": [
+      41.5,
+      10.5,
+      -39.5
+    ],
+    "viewup": [
+      -0.5257311121191337,
+      -0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 60.96040289113459
+  },
+  "000010.png": {
+    "model_name": "1_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/1_stp.stp",
+    "view_index": 10,
+    "direction": [
+      -0.85065080835204,
+      0,
+      0.5257311121191336
+    ],
+    "camera_position": [
+      -170.31205127965796,
+      10.5,
+      91.40704691766427
+    ],
+    "focal_point": [
+      41.5,
+      10.5,
+      -39.5
+    ],
+    "viewup": [
+      0.5257311121191337,
+      -0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 60.96040289113459
+  },
+  "000011.png": {
+    "model_name": "1_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/1_stp.stp",
+    "view_index": 11,
+    "direction": [
+      0.85065080835204,
+      0,
+      -0.5257311121191336
+    ],
+    "camera_position": [
+      253.31205127965796,
+      10.5,
+      -170.40704691766427
+    ],
+    "focal_point": [
+      41.5,
+      10.5,
+      -39.5
+    ],
+    "viewup": [
+      0.5257311121191337,
+      0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 60.96040289113459
+  },
+  "000012.png": {
+    "model_name": "1_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/1_stp.stp",
+    "view_index": 12,
+    "direction": [
+      -0.85065080835204,
+      0,
+      -0.5257311121191336
+    ],
+    "camera_position": [
+      -170.31205127965796,
+      10.5,
+      -170.40704691766427
+    ],
+    "focal_point": [
+      41.5,
+      10.5,
+      -39.5
+    ],
+    "viewup": [
+      -0.5257311121191337,
+      0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 60.96040289113459
+  },
+  "000013.png": {
+    "model_name": "2_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/2_stp.stp",
+    "view_index": 1,
+    "direction": [
+      0,
+      0.5257311121191336,
+      0.85065080835204
+    ],
+    "camera_position": [
+      0.0,
+      301.4684805080434,
+      428.72800740942824
+    ],
+    "focal_point": [
+      0.0,
+      36.5,
+      0.0
+    ],
+    "viewup": [
+      -0.0,
+      -0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 82.73118471514236
+  },
+  "000014.png": {
+    "model_name": "2_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/2_stp.stp",
+    "view_index": 2,
+    "direction": [
+      0,
+      -0.5257311121191336,
+      0.85065080835204
+    ],
+    "camera_position": [
+      0.0,
+      -228.4684805080434,
+      428.72800740942824
+    ],
+    "focal_point": [
+      0.0,
+      36.5,
+      0.0
+    ],
+    "viewup": [
+      -0.0,
+      0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 82.73118471514236
+  },
+  "000015.png": {
+    "model_name": "2_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/2_stp.stp",
+    "view_index": 3,
+    "direction": [
+      0,
+      0.5257311121191336,
+      -0.85065080835204
+    ],
+    "camera_position": [
+      0.0,
+      301.4684805080434,
+      -428.72800740942824
+    ],
+    "focal_point": [
+      0.0,
+      36.5,
+      0.0
+    ],
+    "viewup": [
+      0.0,
+      0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 82.73118471514236
+  },
+  "000016.png": {
+    "model_name": "2_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/2_stp.stp",
+    "view_index": 4,
+    "direction": [
+      0,
+      -0.5257311121191336,
+      -0.85065080835204
+    ],
+    "camera_position": [
+      0.0,
+      -228.4684805080434,
+      -428.72800740942824
+    ],
+    "focal_point": [
+      0.0,
+      36.5,
+      0.0
+    ],
+    "viewup": [
+      0.0,
+      -0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 82.73118471514236
+  },
+  "000017.png": {
+    "model_name": "2_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/2_stp.stp",
+    "view_index": 5,
+    "direction": [
+      0.5257311121191336,
+      0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      264.9684805080434,
+      465.22800740942824,
+      0.0
+    ],
+    "focal_point": [
+      0.0,
+      36.5,
+      0.0
+    ],
+    "viewup": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "parallel_scale": 92.40000000000002
+  },
+  "000018.png": {
+    "model_name": "2_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/2_stp.stp",
+    "view_index": 6,
+    "direction": [
+      -0.5257311121191336,
+      0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      -264.9684805080434,
+      465.22800740942824,
+      0.0
+    ],
+    "focal_point": [
+      0.0,
+      36.5,
+      0.0
+    ],
+    "viewup": [
+      -0.0,
+      0.0,
+      1.0
+    ],
+    "parallel_scale": 92.40000000000002
+  },
+  "000019.png": {
+    "model_name": "2_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/2_stp.stp",
+    "view_index": 7,
+    "direction": [
+      0.5257311121191336,
+      -0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      264.9684805080434,
+      -392.22800740942824,
+      0.0
+    ],
+    "focal_point": [
+      0.0,
+      36.5,
+      0.0
+    ],
+    "viewup": [
+      0.0,
+      -0.0,
+      1.0
+    ],
+    "parallel_scale": 92.40000000000002
+  },
+  "000020.png": {
+    "model_name": "2_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/2_stp.stp",
+    "view_index": 8,
+    "direction": [
+      -0.5257311121191336,
+      -0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      -264.9684805080434,
+      -392.22800740942824,
+      0.0
+    ],
+    "focal_point": [
+      0.0,
+      36.5,
+      0.0
+    ],
+    "viewup": [
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    "parallel_scale": 92.40000000000002
+  },
+  "000021.png": {
+    "model_name": "2_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/2_stp.stp",
+    "view_index": 9,
+    "direction": [
+      0.85065080835204,
+      0,
+      0.5257311121191336
+    ],
+    "camera_position": [
+      428.72800740942824,
+      36.5,
+      264.9684805080434
+    ],
+    "focal_point": [
+      0.0,
+      36.5,
+      0.0
+    ],
+    "viewup": [
+      -0.5257311121191337,
+      -0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 121.39464721822601
+  },
+  "000022.png": {
+    "model_name": "2_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/2_stp.stp",
+    "view_index": 10,
+    "direction": [
+      -0.85065080835204,
+      0,
+      0.5257311121191336
+    ],
+    "camera_position": [
+      -428.72800740942824,
+      36.5,
+      264.9684805080434
+    ],
+    "focal_point": [
+      0.0,
+      36.5,
+      0.0
+    ],
+    "viewup": [
+      0.5257311121191337,
+      -0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 121.39464721822601
+  },
+  "000023.png": {
+    "model_name": "2_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/2_stp.stp",
+    "view_index": 11,
+    "direction": [
+      0.85065080835204,
+      0,
+      -0.5257311121191336
+    ],
+    "camera_position": [
+      428.72800740942824,
+      36.5,
+      -264.9684805080434
+    ],
+    "focal_point": [
+      0.0,
+      36.5,
+      0.0
+    ],
+    "viewup": [
+      0.5257311121191337,
+      0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 121.39464721822601
+  },
+  "000024.png": {
+    "model_name": "2_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/2_stp.stp",
+    "view_index": 12,
+    "direction": [
+      -0.85065080835204,
+      0,
+      -0.5257311121191336
+    ],
+    "camera_position": [
+      -428.72800740942824,
+      36.5,
+      -264.9684805080434
+    ],
+    "focal_point": [
+      0.0,
+      36.5,
+      0.0
+    ],
+    "viewup": [
+      -0.5257311121191337,
+      0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 121.39464721822601
+  },
+  "000025.png": {
+    "model_name": "3_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/3_stp.stp",
+    "view_index": 1,
+    "direction": [
+      0,
+      0.5257311121191336,
+      0.85065080835204
+    ],
+    "camera_position": [
+      0.0,
+      860.6744036502337,
+      1440.6004383531247
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      47.99999999999999
+    ],
+    "viewup": [
+      -0.0,
+      -0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 300.13500000000005
+  },
+  "000026.png": {
+    "model_name": "3_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/3_stp.stp",
+    "view_index": 2,
+    "direction": [
+      0,
+      -0.5257311121191336,
+      0.85065080835204
+    ],
+    "camera_position": [
+      0.0,
+      -860.6744036502337,
+      1440.6004383531247
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      47.99999999999999
+    ],
+    "viewup": [
+      -0.0,
+      0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 300.13500000000005
+  },
+  "000027.png": {
+    "model_name": "3_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/3_stp.stp",
+    "view_index": 3,
+    "direction": [
+      0,
+      0.5257311121191336,
+      -0.85065080835204
+    ],
+    "camera_position": [
+      0.0,
+      860.6744036502337,
+      -1344.6004383531247
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      47.99999999999999
+    ],
+    "viewup": [
+      0.0,
+      0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 300.13500000000005
+  },
+  "000028.png": {
+    "model_name": "3_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/3_stp.stp",
+    "view_index": 4,
+    "direction": [
+      0,
+      -0.5257311121191336,
+      -0.85065080835204
+    ],
+    "camera_position": [
+      0.0,
+      -860.6744036502337,
+      -1344.6004383531247
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      47.99999999999999
+    ],
+    "viewup": [
+      0.0,
+      -0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 300.13500000000005
+  },
+  "000029.png": {
+    "model_name": "3_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/3_stp.stp",
+    "view_index": 5,
+    "direction": [
+      0.5257311121191336,
+      0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      860.6744036502337,
+      1392.6004383531247,
+      47.99999999999999
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      47.99999999999999
+    ],
+    "viewup": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "parallel_scale": 398.64278211733955
+  },
+  "000030.png": {
+    "model_name": "3_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/3_stp.stp",
+    "view_index": 6,
+    "direction": [
+      -0.5257311121191336,
+      0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      -860.6744036502337,
+      1392.6004383531247,
+      47.99999999999999
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      47.99999999999999
+    ],
+    "viewup": [
+      -0.0,
+      0.0,
+      1.0
+    ],
+    "parallel_scale": 398.64278211733955
+  },
+  "000031.png": {
+    "model_name": "3_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/3_stp.stp",
+    "view_index": 7,
+    "direction": [
+      0.5257311121191336,
+      -0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      860.6744036502337,
+      -1392.6004383531247,
+      47.99999999999999
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      47.99999999999999
+    ],
+    "viewup": [
+      0.0,
+      -0.0,
+      1.0
+    ],
+    "parallel_scale": 398.64278211733955
+  },
+  "000032.png": {
+    "model_name": "3_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/3_stp.stp",
+    "view_index": 8,
+    "direction": [
+      -0.5257311121191336,
+      -0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      -860.6744036502337,
+      -1392.6004383531247,
+      47.99999999999999
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      47.99999999999999
+    ],
+    "viewup": [
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    "parallel_scale": 398.64278211733955
+  },
+  "000033.png": {
+    "model_name": "3_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/3_stp.stp",
+    "view_index": 9,
+    "direction": [
+      0.85065080835204,
+      0,
+      0.5257311121191336
+    ],
+    "camera_position": [
+      1392.6004383531247,
+      0.0,
+      908.6744036502337
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      47.99999999999999
+    ],
+    "viewup": [
+      -0.5257311121191337,
+      -0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 272.635
+  },
+  "000034.png": {
+    "model_name": "3_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/3_stp.stp",
+    "view_index": 10,
+    "direction": [
+      -0.85065080835204,
+      0,
+      0.5257311121191336
+    ],
+    "camera_position": [
+      -1392.6004383531247,
+      0.0,
+      908.6744036502337
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      47.99999999999999
+    ],
+    "viewup": [
+      0.5257311121191337,
+      -0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 272.635
+  },
+  "000035.png": {
+    "model_name": "3_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/3_stp.stp",
+    "view_index": 11,
+    "direction": [
+      0.85065080835204,
+      0,
+      -0.5257311121191336
+    ],
+    "camera_position": [
+      1392.6004383531247,
+      0.0,
+      -812.6744036502337
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      47.99999999999999
+    ],
+    "viewup": [
+      0.5257311121191337,
+      0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 272.635
+  },
+  "000036.png": {
+    "model_name": "3_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/3_stp.stp",
+    "view_index": 12,
+    "direction": [
+      -0.85065080835204,
+      0,
+      -0.5257311121191336
+    ],
+    "camera_position": [
+      -1392.6004383531247,
+      0.0,
+      -812.6744036502337
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      47.99999999999999
+    ],
+    "viewup": [
+      -0.5257311121191337,
+      0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 272.635
+  },
+  "000037.png": {
+    "model_name": "4_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/4_stp.stp",
+    "view_index": 1,
+    "direction": [
+      0,
+      0.5257311121191336,
+      0.85065080835204
+    ],
+    "camera_position": [
+      0.0,
+      509.8773345429603,
+      1040.780970022448
+    ],
+    "focal_point": [
+      0.0,
+      -121.00000000000001,
+      20.0
+    ],
+    "viewup": [
+      -0.0,
+      -0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 220.00000000000003
+  },
+  "000038.png": {
+    "model_name": "4_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/4_stp.stp",
+    "view_index": 2,
+    "direction": [
+      0,
+      -0.5257311121191336,
+      0.85065080835204
+    ],
+    "camera_position": [
+      0.0,
+      -751.8773345429603,
+      1040.780970022448
+    ],
+    "focal_point": [
+      0.0,
+      -121.00000000000001,
+      20.0
+    ],
+    "viewup": [
+      -0.0,
+      0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 220.00000000000003
+  },
+  "000039.png": {
+    "model_name": "4_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/4_stp.stp",
+    "view_index": 3,
+    "direction": [
+      0,
+      0.5257311121191336,
+      -0.85065080835204
+    ],
+    "camera_position": [
+      0.0,
+      509.8773345429603,
+      -1000.780970022448
+    ],
+    "focal_point": [
+      0.0,
+      -121.00000000000001,
+      20.0
+    ],
+    "viewup": [
+      0.0,
+      0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 220.00000000000003
+  },
+  "000040.png": {
+    "model_name": "4_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/4_stp.stp",
+    "view_index": 4,
+    "direction": [
+      0,
+      -0.5257311121191336,
+      -0.85065080835204
+    ],
+    "camera_position": [
+      0.0,
+      -751.8773345429603,
+      -1000.780970022448
+    ],
+    "focal_point": [
+      0.0,
+      -121.00000000000001,
+      20.0
+    ],
+    "viewup": [
+      0.0,
+      -0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 220.00000000000003
+  },
+  "000041.png": {
+    "model_name": "4_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/4_stp.stp",
+    "view_index": 5,
+    "direction": [
+      0.5257311121191336,
+      0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      630.8773345429603,
+      899.780970022448,
+      20.0
+    ],
+    "focal_point": [
+      0.0,
+      -121.00000000000001,
+      20.0
+    ],
+    "viewup": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "parallel_scale": 260.00950997716075
+  },
+  "000042.png": {
+    "model_name": "4_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/4_stp.stp",
+    "view_index": 6,
+    "direction": [
+      -0.5257311121191336,
+      0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      -630.8773345429603,
+      899.780970022448,
+      20.0
+    ],
+    "focal_point": [
+      0.0,
+      -121.00000000000001,
+      20.0
+    ],
+    "viewup": [
+      -0.0,
+      0.0,
+      1.0
+    ],
+    "parallel_scale": 260.00950997716075
+  },
+  "000043.png": {
+    "model_name": "4_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/4_stp.stp",
+    "view_index": 7,
+    "direction": [
+      0.5257311121191336,
+      -0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      630.8773345429603,
+      -1141.780970022448,
+      20.0
+    ],
+    "focal_point": [
+      0.0,
+      -121.00000000000001,
+      20.0
+    ],
+    "viewup": [
+      0.0,
+      -0.0,
+      1.0
+    ],
+    "parallel_scale": 260.00950997716075
+  },
+  "000044.png": {
+    "model_name": "4_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/4_stp.stp",
+    "view_index": 8,
+    "direction": [
+      -0.5257311121191336,
+      -0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      -630.8773345429603,
+      -1141.780970022448,
+      20.0
+    ],
+    "focal_point": [
+      0.0,
+      -121.00000000000001,
+      20.0
+    ],
+    "viewup": [
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    "parallel_scale": 260.00950997716075
+  },
+  "000045.png": {
+    "model_name": "4_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/4_stp.stp",
+    "view_index": 9,
+    "direction": [
+      0.85065080835204,
+      0,
+      0.5257311121191336
+    ],
+    "camera_position": [
+      1020.780970022448,
+      -121.00000000000001,
+      650.8773345429603
+    ],
+    "focal_point": [
+      0.0,
+      -121.00000000000001,
+      20.0
+    ],
+    "viewup": [
+      -0.5257311121191337,
+      -0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 139.05374189589054
+  },
+  "000046.png": {
+    "model_name": "4_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/4_stp.stp",
+    "view_index": 10,
+    "direction": [
+      -0.85065080835204,
+      0,
+      0.5257311121191336
+    ],
+    "camera_position": [
+      -1020.780970022448,
+      -121.00000000000001,
+      650.8773345429603
+    ],
+    "focal_point": [
+      0.0,
+      -121.00000000000001,
+      20.0
+    ],
+    "viewup": [
+      0.5257311121191337,
+      -0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 139.05374189589054
+  },
+  "000047.png": {
+    "model_name": "4_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/4_stp.stp",
+    "view_index": 11,
+    "direction": [
+      0.85065080835204,
+      0,
+      -0.5257311121191336
+    ],
+    "camera_position": [
+      1020.780970022448,
+      -121.00000000000001,
+      -610.8773345429603
+    ],
+    "focal_point": [
+      0.0,
+      -121.00000000000001,
+      20.0
+    ],
+    "viewup": [
+      0.5257311121191337,
+      0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 139.05374189589054
+  },
+  "000048.png": {
+    "model_name": "4_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/4_stp.stp",
+    "view_index": 12,
+    "direction": [
+      -0.85065080835204,
+      0,
+      -0.5257311121191336
+    ],
+    "camera_position": [
+      -1020.780970022448,
+      -121.00000000000001,
+      -610.8773345429603
+    ],
+    "focal_point": [
+      0.0,
+      -121.00000000000001,
+      20.0
+    ],
+    "viewup": [
+      -0.5257311121191337,
+      0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 139.05374189589054
+  },
+  "000049.png": {
+    "model_name": "6_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/6_stp.stp",
+    "view_index": 1,
+    "direction": [
+      0,
+      0.5257311121191336,
+      0.85065080835204
+    ],
+    "camera_position": [
+      0.0,
+      426.7983340893502,
+      637.98810626403
+    ],
+    "focal_point": [
+      0.0,
+      32.5,
+      0.0
+    ],
+    "viewup": [
+      -0.0,
+      -0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 137.5
+  },
+  "000050.png": {
+    "model_name": "6_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/6_stp.stp",
+    "view_index": 2,
+    "direction": [
+      0,
+      -0.5257311121191336,
+      0.85065080835204
+    ],
+    "camera_position": [
+      0.0,
+      -361.7983340893502,
+      637.98810626403
+    ],
+    "focal_point": [
+      0.0,
+      32.5,
+      0.0
+    ],
+    "viewup": [
+      -0.0,
+      0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 137.5
+  },
+  "000051.png": {
+    "model_name": "6_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/6_stp.stp",
+    "view_index": 3,
+    "direction": [
+      0,
+      0.5257311121191336,
+      -0.85065080835204
+    ],
+    "camera_position": [
+      0.0,
+      426.7983340893502,
+      -637.98810626403
+    ],
+    "focal_point": [
+      0.0,
+      32.5,
+      0.0
+    ],
+    "viewup": [
+      0.0,
+      0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 137.5
+  },
+  "000052.png": {
+    "model_name": "6_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/6_stp.stp",
+    "view_index": 4,
+    "direction": [
+      0,
+      -0.5257311121191336,
+      -0.85065080835204
+    ],
+    "camera_position": [
+      0.0,
+      -361.7983340893502,
+      -637.98810626403
+    ],
+    "focal_point": [
+      0.0,
+      32.5,
+      0.0
+    ],
+    "viewup": [
+      0.0,
+      -0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 137.5
+  },
+  "000053.png": {
+    "model_name": "6_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/6_stp.stp",
+    "view_index": 5,
+    "direction": [
+      0.5257311121191336,
+      0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      394.2983340893502,
+      670.48810626403,
+      0.0
+    ],
+    "focal_point": [
+      0.0,
+      32.5,
+      0.0
+    ],
+    "viewup": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "parallel_scale": 135.75937340666454
+  },
+  "000054.png": {
+    "model_name": "6_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/6_stp.stp",
+    "view_index": 6,
+    "direction": [
+      -0.5257311121191336,
+      0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      -394.2983340893502,
+      670.48810626403,
+      0.0
+    ],
+    "focal_point": [
+      0.0,
+      32.5,
+      0.0
+    ],
+    "viewup": [
+      -0.0,
+      0.0,
+      1.0
+    ],
+    "parallel_scale": 135.75937340666454
+  },
+  "000055.png": {
+    "model_name": "6_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/6_stp.stp",
+    "view_index": 7,
+    "direction": [
+      0.5257311121191336,
+      -0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      394.2983340893502,
+      -605.48810626403,
+      0.0
+    ],
+    "focal_point": [
+      0.0,
+      32.5,
+      0.0
+    ],
+    "viewup": [
+      0.0,
+      -0.0,
+      1.0
+    ],
+    "parallel_scale": 135.75937340666454
+  },
+  "000056.png": {
+    "model_name": "6_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/6_stp.stp",
+    "view_index": 8,
+    "direction": [
+      -0.5257311121191336,
+      -0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      -394.2983340893502,
+      -605.48810626403,
+      0.0
+    ],
+    "focal_point": [
+      0.0,
+      32.5,
+      0.0
+    ],
+    "viewup": [
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    "parallel_scale": 135.75937340666454
+  },
+  "000057.png": {
+    "model_name": "6_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/6_stp.stp",
+    "view_index": 9,
+    "direction": [
+      0.85065080835204,
+      0,
+      0.5257311121191336
+    ],
+    "camera_position": [
+      637.98810626403,
+      32.5,
+      394.2983340893502
+    ],
+    "focal_point": [
+      0.0,
+      32.5,
+      0.0
+    ],
+    "viewup": [
+      -0.5257311121191337,
+      -0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 142.4667196054242
+  },
+  "000058.png": {
+    "model_name": "6_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/6_stp.stp",
+    "view_index": 10,
+    "direction": [
+      -0.85065080835204,
+      0,
+      0.5257311121191336
+    ],
+    "camera_position": [
+      -637.98810626403,
+      32.5,
+      394.2983340893502
+    ],
+    "focal_point": [
+      0.0,
+      32.5,
+      0.0
+    ],
+    "viewup": [
+      0.5257311121191337,
+      -0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 142.4667196054242
+  },
+  "000059.png": {
+    "model_name": "6_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/6_stp.stp",
+    "view_index": 11,
+    "direction": [
+      0.85065080835204,
+      0,
+      -0.5257311121191336
+    ],
+    "camera_position": [
+      637.98810626403,
+      32.5,
+      -394.2983340893502
+    ],
+    "focal_point": [
+      0.0,
+      32.5,
+      0.0
+    ],
+    "viewup": [
+      0.5257311121191337,
+      0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 142.4667196054242
+  },
+  "000060.png": {
+    "model_name": "6_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/6_stp.stp",
+    "view_index": 12,
+    "direction": [
+      -0.85065080835204,
+      0,
+      -0.5257311121191336
+    ],
+    "camera_position": [
+      -637.98810626403,
+      32.5,
+      -394.2983340893502
+    ],
+    "focal_point": [
+      0.0,
+      32.5,
+      0.0
+    ],
+    "viewup": [
+      -0.5257311121191337,
+      0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 142.4667196054242
+  },
+  "000061.png": {
+    "model_name": "7_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/7_stp.stp",
+    "view_index": 1,
+    "direction": [
+      0,
+      0.5257311121191336,
+      0.85065080835204
+    ],
+    "camera_position": [
+      0.0,
+      157.71933363574007,
+      222.695242505612
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      -32.5
+    ],
+    "viewup": [
+      -0.0,
+      -0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 74.25524506758693
+  },
+  "000062.png": {
+    "model_name": "7_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/7_stp.stp",
+    "view_index": 2,
+    "direction": [
+      0,
+      -0.5257311121191336,
+      0.85065080835204
+    ],
+    "camera_position": [
+      0.0,
+      -157.71933363574007,
+      222.695242505612
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      -32.5
+    ],
+    "viewup": [
+      -0.0,
+      0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 74.25524506758693
+  },
+  "000063.png": {
+    "model_name": "7_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/7_stp.stp",
+    "view_index": 3,
+    "direction": [
+      0,
+      0.5257311121191336,
+      -0.85065080835204
+    ],
+    "camera_position": [
+      0.0,
+      157.71933363574007,
+      -287.695242505612
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      -32.5
+    ],
+    "viewup": [
+      0.0,
+      0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 74.25524506758693
+  },
+  "000064.png": {
+    "model_name": "7_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/7_stp.stp",
+    "view_index": 4,
+    "direction": [
+      0,
+      -0.5257311121191336,
+      -0.85065080835204
+    ],
+    "camera_position": [
+      0.0,
+      -157.71933363574007,
+      -287.695242505612
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      -32.5
+    ],
+    "viewup": [
+      0.0,
+      -0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 74.25524506758693
+  },
+  "000065.png": {
+    "model_name": "7_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/7_stp.stp",
+    "view_index": 5,
+    "direction": [
+      0.5257311121191336,
+      0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      157.71933363574007,
+      255.195242505612,
+      -32.5
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      -32.5
+    ],
+    "viewup": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "parallel_scale": 75.70100562591455
+  },
+  "000066.png": {
+    "model_name": "7_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/7_stp.stp",
+    "view_index": 6,
+    "direction": [
+      -0.5257311121191336,
+      0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      -157.71933363574007,
+      255.195242505612,
+      -32.5
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      -32.5
+    ],
+    "viewup": [
+      -0.0,
+      0.0,
+      1.0
+    ],
+    "parallel_scale": 75.70100562591455
+  },
+  "000067.png": {
+    "model_name": "7_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/7_stp.stp",
+    "view_index": 7,
+    "direction": [
+      0.5257311121191336,
+      -0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      157.71933363574007,
+      -255.195242505612,
+      -32.5
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      -32.5
+    ],
+    "viewup": [
+      0.0,
+      -0.0,
+      1.0
+    ],
+    "parallel_scale": 75.70100562591455
+  },
+  "000068.png": {
+    "model_name": "7_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/7_stp.stp",
+    "view_index": 8,
+    "direction": [
+      -0.5257311121191336,
+      -0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      -157.71933363574007,
+      -255.195242505612,
+      -32.5
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      -32.5
+    ],
+    "viewup": [
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    "parallel_scale": 75.70100562591455
+  },
+  "000069.png": {
+    "model_name": "7_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/7_stp.stp",
+    "view_index": 9,
+    "direction": [
+      0.85065080835204,
+      0,
+      0.5257311121191336
+    ],
+    "camera_position": [
+      255.195242505612,
+      0.0,
+      125.21933363574007
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      -32.5
+    ],
+    "viewup": [
+      -0.5257311121191337,
+      -0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 73.36171590294646
+  },
+  "000070.png": {
+    "model_name": "7_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/7_stp.stp",
+    "view_index": 10,
+    "direction": [
+      -0.85065080835204,
+      0,
+      0.5257311121191336
+    ],
+    "camera_position": [
+      -255.195242505612,
+      0.0,
+      125.21933363574007
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      -32.5
+    ],
+    "viewup": [
+      0.5257311121191337,
+      -0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 73.36171590294646
+  },
+  "000071.png": {
+    "model_name": "7_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/7_stp.stp",
+    "view_index": 11,
+    "direction": [
+      0.85065080835204,
+      0,
+      -0.5257311121191336
+    ],
+    "camera_position": [
+      255.195242505612,
+      0.0,
+      -190.21933363574007
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      -32.5
+    ],
+    "viewup": [
+      0.5257311121191337,
+      0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 73.36171590294646
+  },
+  "000072.png": {
+    "model_name": "7_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/7_stp.stp",
+    "view_index": 12,
+    "direction": [
+      -0.85065080835204,
+      0,
+      -0.5257311121191336
+    ],
+    "camera_position": [
+      -255.195242505612,
+      0.0,
+      -190.21933363574007
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      -32.5
+    ],
+    "viewup": [
+      -0.5257311121191337,
+      0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 73.36171590294646
+  },
+  "000073.png": {
+    "model_name": "8_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/8_stp.stp",
+    "view_index": 1,
+    "direction": [
+      0,
+      0.5257311121191336,
+      0.85065080835204
+    ],
+    "camera_position": [
+      0.0,
+      236.57900045361012,
+      408.792863758418
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      26.000000000000004
+    ],
+    "viewup": [
+      -0.0,
+      -0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 85.21460149565053
+  },
+  "000074.png": {
+    "model_name": "8_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/8_stp.stp",
+    "view_index": 2,
+    "direction": [
+      0,
+      -0.5257311121191336,
+      0.85065080835204
+    ],
+    "camera_position": [
+      0.0,
+      -236.57900045361012,
+      408.792863758418
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      26.000000000000004
+    ],
+    "viewup": [
+      -0.0,
+      0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 85.21460149565053
+  },
+  "000075.png": {
+    "model_name": "8_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/8_stp.stp",
+    "view_index": 3,
+    "direction": [
+      0,
+      0.5257311121191336,
+      -0.85065080835204
+    ],
+    "camera_position": [
+      0.0,
+      236.57900045361012,
+      -356.792863758418
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      26.000000000000004
+    ],
+    "viewup": [
+      0.0,
+      0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 85.21460149565053
+  },
+  "000076.png": {
+    "model_name": "8_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/8_stp.stp",
+    "view_index": 4,
+    "direction": [
+      0,
+      -0.5257311121191336,
+      -0.85065080835204
+    ],
+    "camera_position": [
+      0.0,
+      -236.57900045361012,
+      -356.792863758418
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      26.000000000000004
+    ],
+    "viewup": [
+      0.0,
+      -0.85065080835204,
+      0.5257311121191335
+    ],
+    "parallel_scale": 85.21460149565053
+  },
+  "000077.png": {
+    "model_name": "8_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/8_stp.stp",
+    "view_index": 5,
+    "direction": [
+      0.5257311121191336,
+      0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      236.57900045361012,
+      382.792863758418,
+      26.000000000000004
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      26.000000000000004
+    ],
+    "viewup": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "parallel_scale": 113.55150843887183
+  },
+  "000078.png": {
+    "model_name": "8_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/8_stp.stp",
+    "view_index": 6,
+    "direction": [
+      -0.5257311121191336,
+      0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      -236.57900045361012,
+      382.792863758418,
+      26.000000000000004
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      26.000000000000004
+    ],
+    "viewup": [
+      -0.0,
+      0.0,
+      1.0
+    ],
+    "parallel_scale": 113.55150843887183
+  },
+  "000079.png": {
+    "model_name": "8_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/8_stp.stp",
+    "view_index": 7,
+    "direction": [
+      0.5257311121191336,
+      -0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      236.57900045361012,
+      -382.792863758418,
+      26.000000000000004
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      26.000000000000004
+    ],
+    "viewup": [
+      0.0,
+      -0.0,
+      1.0
+    ],
+    "parallel_scale": 113.55150843887183
+  },
+  "000080.png": {
+    "model_name": "8_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/8_stp.stp",
+    "view_index": 8,
+    "direction": [
+      -0.5257311121191336,
+      -0.85065080835204,
+      0
+    ],
+    "camera_position": [
+      -236.57900045361012,
+      -382.792863758418,
+      26.000000000000004
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      26.000000000000004
+    ],
+    "viewup": [
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    "parallel_scale": 113.55150843887183
+  },
+  "000081.png": {
+    "model_name": "8_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/8_stp.stp",
+    "view_index": 9,
+    "direction": [
+      0.85065080835204,
+      0,
+      0.5257311121191336
+    ],
+    "camera_position": [
+      382.792863758418,
+      0.0,
+      262.57900045361015
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      26.000000000000004
+    ],
+    "viewup": [
+      -0.5257311121191337,
+      -0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 82.5
+  },
+  "000082.png": {
+    "model_name": "8_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/8_stp.stp",
+    "view_index": 10,
+    "direction": [
+      -0.85065080835204,
+      0,
+      0.5257311121191336
+    ],
+    "camera_position": [
+      -382.792863758418,
+      0.0,
+      262.57900045361015
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      26.000000000000004
+    ],
+    "viewup": [
+      0.5257311121191337,
+      -0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 82.5
+  },
+  "000083.png": {
+    "model_name": "8_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/8_stp.stp",
+    "view_index": 11,
+    "direction": [
+      0.85065080835204,
+      0,
+      -0.5257311121191336
+    ],
+    "camera_position": [
+      382.792863758418,
+      0.0,
+      -210.57900045361012
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      26.000000000000004
+    ],
+    "viewup": [
+      0.5257311121191337,
+      0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 82.5
+  },
+  "000084.png": {
+    "model_name": "8_stp",
+    "step_file": "E:/aaaa-WUT/lw/ASCCAD/test_step/cavity_test_02/8_stp.stp",
+    "view_index": 12,
+    "direction": [
+      -0.85065080835204,
+      0,
+      -0.5257311121191336
+    ],
+    "camera_position": [
+      -382.792863758418,
+      0.0,
+      -210.57900045361012
+    ],
+    "focal_point": [
+      0.0,
+      0.0,
+      26.000000000000004
+    ],
+    "viewup": [
+      -0.5257311121191337,
+      0.0,
+      0.85065080835204
+    ],
+    "parallel_scale": 82.5
+  }
+}

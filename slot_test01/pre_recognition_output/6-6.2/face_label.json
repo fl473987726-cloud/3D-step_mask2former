@@ -1,0 +1,254 @@
+{
+  "1": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 5,
+        "avg_score": 0.9937502
+      }
+    }
+  },
+  "2": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 5,
+        "avg_score": 0.996255
+      }
+    }
+  },
+  "3": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 4,
+        "avg_score": 0.9936364999999999
+      }
+    }
+  },
+  "4": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 5,
+        "avg_score": 0.9934835999999999
+      }
+    }
+  },
+  "5": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 5,
+        "avg_score": 0.9947533999999999
+      }
+    }
+  },
+  "6": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 3,
+        "avg_score": 0.9924583333333333
+      }
+    }
+  },
+  "7": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 5,
+        "avg_score": 0.992901
+      }
+    }
+  },
+  "8": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 5,
+        "avg_score": 0.9943
+      }
+    }
+  },
+  "9": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 4,
+        "avg_score": 0.99302475
+      }
+    }
+  },
+  "10": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "11": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "12": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "13": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "14": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "15": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "16": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "17": {
+    "class_id": 1,
+    "class_name": "宽体槽",
+    "confidence": 1.0,
+    "votes": {
+      "1": {
+        "class_name": "宽体槽",
+        "view_count": 2,
+        "avg_score": 0.981721
+      }
+    }
+  },
+  "18": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "19": {
+    "class_id": 1,
+    "class_name": "宽体槽",
+    "confidence": 1.0,
+    "votes": {
+      "1": {
+        "class_name": "宽体槽",
+        "view_count": 2,
+        "avg_score": 0.9912835
+      }
+    }
+  },
+  "20": {
+    "class_id": 1,
+    "class_name": "宽体槽",
+    "confidence": 1.0,
+    "votes": {
+      "1": {
+        "class_name": "宽体槽",
+        "view_count": 2,
+        "avg_score": 0.984845
+      }
+    }
+  },
+  "21": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 6,
+        "avg_score": 0.9907516666666667
+      }
+    }
+  },
+  "22": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 4,
+        "avg_score": 0.9895707499999999
+      }
+    }
+  },
+  "23": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 6,
+        "avg_score": 0.9909140000000001
+      }
+    }
+  },
+  "24": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 5,
+        "avg_score": 0.9945152
+      }
+    }
+  },
+  "25": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 6,
+        "avg_score": 0.9934535000000001
+      }
+    }
+  }
+}

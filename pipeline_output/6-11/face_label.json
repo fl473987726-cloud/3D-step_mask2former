@@ -1,0 +1,236 @@
+{
+  "1": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 7,
+        "avg_score": 0.9947754285714284
+      }
+    }
+  },
+  "2": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "3": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "4": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "5": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "6": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 6,
+        "avg_score": 0.9954851666666666
+      }
+    }
+  },
+  "7": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "8": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "9": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "10": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "11": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 7,
+        "avg_score": 0.9944381428571428
+      }
+    }
+  },
+  "12": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "13": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "14": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "15": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "16": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "17": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "18": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 7,
+        "avg_score": 0.994734142857143
+      }
+    }
+  },
+  "19": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "20": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 7,
+        "avg_score": 0.9905415714285714
+      }
+    }
+  },
+  "21": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 4,
+        "avg_score": 0.9898229999999999
+      }
+    }
+  },
+  "22": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 7,
+        "avg_score": 0.9905415714285714
+      }
+    }
+  },
+  "23": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 5,
+        "avg_score": 0.9892335999999998
+      }
+    }
+  },
+  "24": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "25": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "26": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "27": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "28": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "29": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "30": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 6,
+        "avg_score": 0.9933135000000001
+      }
+    }
+  }
+}

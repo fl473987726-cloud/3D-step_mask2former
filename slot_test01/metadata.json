@@ -1,0 +1,26 @@
+{
+  "dataset_name": "mask2former_instance_dataset",
+  "image_width": 1024,
+  "image_height": 1024,
+  "num_categories": 4,
+  "categories": [
+    {
+      "id": 1,
+      "name": "Wide Slot"
+    },
+    {
+      "id": 2,
+      "name": "Closed Slot"
+    },
+    {
+      "id": 3,
+      "name": "Open Slot"
+    },
+    {
+      "id": 4,
+      "name": "Hole"
+    }
+  ],
+  "total_images": 24,
+  "total_annotations": 78
+}

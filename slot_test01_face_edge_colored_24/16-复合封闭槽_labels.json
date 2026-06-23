@@ -1,0 +1,2345 @@
+[
+  {
+    "entity": "Face",
+    "index": 1,
+    "type": "Cylinder",
+    "rgb": [
+      128,
+      0,
+      128
+    ],
+    "hex": "#800080"
+  },
+  {
+    "entity": "Face",
+    "index": 2,
+    "type": "Plane",
+    "rgb": [
+      255,
+      165,
+      0
+    ],
+    "hex": "#ffa500"
+  },
+  {
+    "entity": "Face",
+    "index": 3,
+    "type": "Cylinder",
+    "rgb": [
+      128,
+      0,
+      128
+    ],
+    "hex": "#800080"
+  },
+  {
+    "entity": "Face",
+    "index": 4,
+    "type": "Plane",
+    "rgb": [
+      255,
+      165,
+      0
+    ],
+    "hex": "#ffa500"
+  },
+  {
+    "entity": "Face",
+    "index": 5,
+    "type": "Plane",
+    "rgb": [
+      255,
+      165,
+      0
+    ],
+    "hex": "#ffa500"
+  },
+  {
+    "entity": "Face",
+    "index": 6,
+    "type": "Plane",
+    "rgb": [
+      255,
+      165,
+      0
+    ],
+    "hex": "#ffa500"
+  },
+  {
+    "entity": "Face",
+    "index": 7,
+    "type": "Plane",
+    "rgb": [
+      255,
+      165,
+      0
+    ],
+    "hex": "#ffa500"
+  },
+  {
+    "entity": "Face",
+    "index": 8,
+    "type": "Plane",
+    "rgb": [
+      255,
+      165,
+      0
+    ],
+    "hex": "#ffa500"
+  },
+  {
+    "entity": "Face",
+    "index": 9,
+    "type": "Plane",
+    "rgb": [
+      255,
+      165,
+      0
+    ],
+    "hex": "#ffa500"
+  },
+  {
+    "entity": "Face",
+    "index": 10,
+    "type": "Cylinder",
+    "rgb": [
+      128,
+      0,
+      128
+    ],
+    "hex": "#800080"
+  },
+  {
+    "entity": "Face",
+    "index": 11,
+    "type": "Cylinder",
+    "rgb": [
+      128,
+      0,
+      128
+    ],
+    "hex": "#800080"
+  },
+  {
+    "entity": "Face",
+    "index": 12,
+    "type": "Plane",
+    "rgb": [
+      255,
+      165,
+      0
+    ],
+    "hex": "#ffa500"
+  },
+  {
+    "entity": "Face",
+    "index": 13,
+    "type": "Cylinder",
+    "rgb": [
+      128,
+      0,
+      128
+    ],
+    "hex": "#800080"
+  },
+  {
+    "entity": "Face",
+    "index": 14,
+    "type": "Cylinder",
+    "rgb": [
+      128,
+      0,
+      128
+    ],
+    "hex": "#800080"
+  },
+  {
+    "entity": "Face",
+    "index": 15,
+    "type": "Plane",
+    "rgb": [
+      255,
+      165,
+      0
+    ],
+    "hex": "#ffa500"
+  },
+  {
+    "entity": "Face",
+    "index": 16,
+    "type": "Cylinder",
+    "rgb": [
+      128,
+      0,
+      128
+    ],
+    "hex": "#800080"
+  },
+  {
+    "entity": "Face",
+    "index": 17,
+    "type": "Cylinder",
+    "rgb": [
+      128,
+      0,
+      128
+    ],
+    "hex": "#800080"
+  },
+  {
+    "entity": "Face",
+    "index": 18,
+    "type": "Plane",
+    "rgb": [
+      255,
+      165,
+      0
+    ],
+    "hex": "#ffa500"
+  },
+  {
+    "entity": "Face",
+    "index": 19,
+    "type": "Plane",
+    "rgb": [
+      255,
+      165,
+      0
+    ],
+    "hex": "#ffa500"
+  },
+  {
+    "entity": "Face",
+    "index": 20,
+    "type": "Plane",
+    "rgb": [
+      255,
+      165,
+      0
+    ],
+    "hex": "#ffa500"
+  },
+  {
+    "entity": "Face",
+    "index": 21,
+    "type": "Plane",
+    "rgb": [
+      255,
+      165,
+      0
+    ],
+    "hex": "#ffa500"
+  },
+  {
+    "entity": "Face",
+    "index": 22,
+    "type": "Plane",
+    "rgb": [
+      255,
+      165,
+      0
+    ],
+    "hex": "#ffa500"
+  },
+  {
+    "entity": "Face",
+    "index": 23,
+    "type": "Plane",
+    "rgb": [
+      255,
+      165,
+      0
+    ],
+    "hex": "#ffa500"
+  },
+  {
+    "entity": "Face",
+    "index": 24,
+    "type": "Plane",
+    "rgb": [
+      255,
+      165,
+      0
+    ],
+    "hex": "#ffa500"
+  },
+  {
+    "entity": "Face",
+    "index": 25,
+    "type": "Plane",
+    "rgb": [
+      255,
+      165,
+      0
+    ],
+    "hex": "#ffa500"
+  },
+  {
+    "entity": "Face",
+    "index": 26,
+    "type": "Plane",
+    "rgb": [
+      255,
+      165,
+      0
+    ],
+    "hex": "#ffa500"
+  },
+  {
+    "entity": "Face",
+    "index": 27,
+    "type": "Plane",
+    "rgb": [
+      255,
+      165,
+      0
+    ],
+    "hex": "#ffa500"
+  },
+  {
+    "entity": "Face",
+    "index": 28,
+    "type": "Plane",
+    "rgb": [
+      255,
+      165,
+      0
+    ],
+    "hex": "#ffa500"
+  },
+  {
+    "entity": "Face",
+    "index": 29,
+    "type": "Cylinder",
+    "rgb": [
+      128,
+      0,
+      128
+    ],
+    "hex": "#800080"
+  },
+  {
+    "entity": "Face",
+    "index": 30,
+    "type": "Cylinder",
+    "rgb": [
+      128,
+      0,
+      128
+    ],
+    "hex": "#800080"
+  },
+  {
+    "entity": "Face",
+    "index": 31,
+    "type": "Cylinder",
+    "rgb": [
+      128,
+      0,
+      128
+    ],
+    "hex": "#800080"
+  },
+  {
+    "entity": "Face",
+    "index": 32,
+    "type": "Cylinder",
+    "rgb": [
+      128,
+      0,
+      128
+    ],
+    "hex": "#800080"
+  },
+  {
+    "entity": "Face",
+    "index": 33,
+    "type": "Plane",
+    "rgb": [
+      255,
+      165,
+      0
+    ],
+    "hex": "#ffa500"
+  },
+  {
+    "entity": "Edge",
+    "index": 1,
+    "type": "Smooth",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 2,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 3,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 4,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 5,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 6,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 7,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 8,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 9,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 10,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 11,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 12,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 13,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 14,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 15,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 16,
+    "type": "Smooth",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 17,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 18,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 19,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 20,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 21,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 22,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 23,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 24,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 25,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 26,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 27,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 28,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 29,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 30,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 31,
+    "type": "Smooth",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 32,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 33,
+    "type": "Smooth",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 34,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 35,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 36,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 37,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 38,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 39,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 40,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 41,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 42,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 43,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 44,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 45,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 46,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 47,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 48,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 49,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 50,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 51,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 52,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 53,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 54,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 55,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 56,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 57,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 58,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 59,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 60,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 61,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 62,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 63,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 64,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 65,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 66,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 67,
+    "type": "Smooth",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 68,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 69,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 70,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 71,
+    "type": "Smooth",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 72,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 73,
+    "type": "Smooth",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 74,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 75,
+    "type": "Smooth",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 76,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 77,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 78,
+    "type": "Smooth",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 79,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 80,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 81,
+    "type": "Smooth",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 82,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 83,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 84,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 85,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 86,
+    "type": "Smooth",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 87,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 88,
+    "type": "Smooth",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 89,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 90,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 91,
+    "type": "Smooth",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 92,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 93,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 94,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 95,
+    "type": "Smooth",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 96,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 97,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 98,
+    "type": "Smooth",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 99,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 100,
+    "type": "Smooth",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 101,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 102,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 103,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 104,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 105,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 106,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 107,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 108,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 109,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 110,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 111,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 112,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 113,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 114,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 115,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 116,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 117,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 118,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 119,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 120,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 121,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 122,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 123,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 124,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 125,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 126,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 127,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 128,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 129,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 130,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 131,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 132,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 133,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 134,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 135,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 136,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 137,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 138,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 139,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 140,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 141,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 142,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 143,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 144,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 145,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 146,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 147,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 148,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 149,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 150,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 151,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 152,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 153,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 154,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 155,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 156,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 157,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 158,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 159,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 160,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 161,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 162,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 163,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 164,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 165,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 166,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 167,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 168,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 169,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 170,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 171,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 172,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 173,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 174,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 175,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 176,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 177,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 178,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 179,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  },
+  {
+    "entity": "Edge",
+    "index": 180,
+    "type": "Edge_Other",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "hex": "#000000"
+  }
+]

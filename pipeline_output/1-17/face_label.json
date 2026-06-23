@@ -1,0 +1,1502 @@
+{
+  "1": {
+    "class_id": 3,
+    "class_name": "开放槽",
+    "confidence": 1.0,
+    "votes": {
+      "3": {
+        "class_name": "开放槽",
+        "view_count": 4,
+        "avg_score": 0.971967
+      }
+    }
+  },
+  "2": {
+    "class_id": 3,
+    "class_name": "开放槽",
+    "confidence": 1.0,
+    "votes": {
+      "3": {
+        "class_name": "开放槽",
+        "view_count": 4,
+        "avg_score": 0.9734935
+      }
+    }
+  },
+  "3": {
+    "class_id": 3,
+    "class_name": "开放槽",
+    "confidence": 1.0,
+    "votes": {
+      "3": {
+        "class_name": "开放槽",
+        "view_count": 4,
+        "avg_score": 0.9742742499999999
+      }
+    }
+  },
+  "4": {
+    "class_id": 3,
+    "class_name": "开放槽",
+    "confidence": 1.0,
+    "votes": {
+      "3": {
+        "class_name": "开放槽",
+        "view_count": 4,
+        "avg_score": 0.9709599999999999
+      }
+    }
+  },
+  "5": {
+    "class_id": 3,
+    "class_name": "开放槽",
+    "confidence": 1.0,
+    "votes": {
+      "3": {
+        "class_name": "开放槽",
+        "view_count": 4,
+        "avg_score": 0.97314775
+      }
+    }
+  },
+  "6": {
+    "class_id": 3,
+    "class_name": "开放槽",
+    "confidence": 1.0,
+    "votes": {
+      "3": {
+        "class_name": "开放槽",
+        "view_count": 4,
+        "avg_score": 0.973827
+      }
+    }
+  },
+  "7": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 6,
+        "avg_score": 0.9742821666666667
+      }
+    }
+  },
+  "8": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "9": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "10": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "11": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 4,
+        "avg_score": 0.9184114999999999
+      }
+    }
+  },
+  "12": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 3,
+        "avg_score": 0.8968590000000001
+      }
+    }
+  },
+  "13": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 4,
+        "avg_score": 0.9055325000000001
+      }
+    }
+  },
+  "14": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 3,
+        "avg_score": 0.9439123333333334
+      }
+    }
+  },
+  "15": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 4,
+        "avg_score": 0.8994482500000001
+      }
+    }
+  },
+  "16": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 3,
+        "avg_score": 0.8858406666666667
+      }
+    }
+  },
+  "17": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 4,
+        "avg_score": 0.8342645000000001
+      }
+    }
+  },
+  "18": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 3,
+        "avg_score": 0.9379283333333334
+      }
+    }
+  },
+  "19": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 4,
+        "avg_score": 0.920514
+      }
+    }
+  },
+  "20": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 3,
+        "avg_score": 0.8122666666666668
+      }
+    }
+  },
+  "21": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 4,
+        "avg_score": 0.8416122500000001
+      }
+    }
+  },
+  "22": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 3,
+        "avg_score": 0.9434
+      }
+    }
+  },
+  "23": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 6,
+        "avg_score": 0.8939431666666667
+      }
+    }
+  },
+  "24": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 2,
+        "avg_score": 0.8905285000000001
+      }
+    }
+  },
+  "25": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 6,
+        "avg_score": 0.9001708333333335
+      }
+    }
+  },
+  "26": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 2,
+        "avg_score": 0.9395505
+      }
+    }
+  },
+  "27": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 4,
+        "avg_score": 0.9242987500000001
+      }
+    }
+  },
+  "28": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 3,
+        "avg_score": 0.9194533333333333
+      }
+    }
+  },
+  "29": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 4,
+        "avg_score": 0.76090375
+      }
+    }
+  },
+  "30": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 3,
+        "avg_score": 0.8395096666666667
+      }
+    }
+  },
+  "31": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 6,
+        "avg_score": 0.8955131666666666
+      }
+    }
+  },
+  "32": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 2,
+        "avg_score": 0.8927050000000001
+      }
+    }
+  },
+  "33": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 6,
+        "avg_score": 0.8995176666666665
+      }
+    }
+  },
+  "34": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 2,
+        "avg_score": 0.9394435000000001
+      }
+    }
+  },
+  "35": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "36": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "37": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "38": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "39": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "40": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "41": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "42": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "43": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "44": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "45": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "46": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "47": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "48": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "49": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "50": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "51": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "52": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "53": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "54": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "55": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "56": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "57": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "58": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "59": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "60": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "61": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "62": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "63": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "64": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "65": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "66": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "67": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "68": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "69": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "70": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "71": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "72": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 6,
+        "avg_score": 0.9196946666666667
+      }
+    }
+  },
+  "73": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 2,
+        "avg_score": 0.878925
+      }
+    }
+  },
+  "74": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 6,
+        "avg_score": 0.9305954999999999
+      }
+    }
+  },
+  "75": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 2,
+        "avg_score": 0.9650045
+      }
+    }
+  },
+  "76": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 4,
+        "avg_score": 0.9630057500000001
+      }
+    }
+  },
+  "77": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 5,
+        "avg_score": 0.95832
+      }
+    }
+  },
+  "78": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 3,
+        "avg_score": 0.9602373333333333
+      }
+    }
+  },
+  "79": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 5,
+        "avg_score": 0.8807974
+      }
+    }
+  },
+  "80": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 3,
+        "avg_score": 0.9644943333333332
+      }
+    }
+  },
+  "81": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 4,
+        "avg_score": 0.97693575
+      }
+    }
+  },
+  "82": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 6,
+        "avg_score": 0.9235736666666666
+      }
+    }
+  },
+  "83": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 2,
+        "avg_score": 0.888006
+      }
+    }
+  },
+  "84": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 6,
+        "avg_score": 0.9315558333333332
+      }
+    }
+  },
+  "85": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 2,
+        "avg_score": 0.964737
+      }
+    }
+  },
+  "86": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 4,
+        "avg_score": 0.9650095
+      }
+    }
+  },
+  "87": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 5,
+        "avg_score": 0.966806
+      }
+    }
+  },
+  "88": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 3,
+        "avg_score": 0.9559203333333333
+      }
+    }
+  },
+  "89": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 5,
+        "avg_score": 0.8851925999999999
+      }
+    }
+  },
+  "90": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 3,
+        "avg_score": 0.9616716666666667
+      }
+    }
+  },
+  "91": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 4,
+        "avg_score": 0.8751655
+      }
+    }
+  },
+  "92": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 5,
+        "avg_score": 0.958789
+      }
+    }
+  },
+  "93": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 3,
+        "avg_score": 0.959642
+      }
+    }
+  },
+  "94": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 5,
+        "avg_score": 0.879842
+      }
+    }
+  },
+  "95": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 3,
+        "avg_score": 0.9614643333333334
+      }
+    }
+  },
+  "96": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 4,
+        "avg_score": 0.9771797499999999
+      }
+    }
+  },
+  "97": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 5,
+        "avg_score": 0.967018
+      }
+    }
+  },
+  "98": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 3,
+        "avg_score": 0.9553980000000001
+      }
+    }
+  },
+  "99": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 5,
+        "avg_score": 0.9342758
+      }
+    }
+  },
+  "100": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 3,
+        "avg_score": 0.9656246666666668
+      }
+    }
+  },
+  "101": {
+    "class_id": 2,
+    "class_name": "封闭槽",
+    "confidence": 1.0,
+    "votes": {
+      "2": {
+        "class_name": "封闭槽",
+        "view_count": 4,
+        "avg_score": 0.870694
+      }
+    }
+  },
+  "102": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "103": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 5,
+        "avg_score": 0.9105328
+      }
+    }
+  },
+  "104": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 8,
+        "avg_score": 0.9728359999999999
+      }
+    }
+  },
+  "105": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 6,
+        "avg_score": 0.9622086666666667
+      }
+    }
+  },
+  "106": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 6,
+        "avg_score": 0.9794611666666667
+      }
+    }
+  },
+  "107": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 6,
+        "avg_score": 0.9723903333333334
+      }
+    }
+  },
+  "108": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 8,
+        "avg_score": 0.9751985
+      }
+    }
+  },
+  "109": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 5,
+        "avg_score": 0.8917135999999999
+      }
+    }
+  },
+  "110": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 6,
+        "avg_score": 0.980778
+      }
+    }
+  },
+  "111": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 2,
+        "avg_score": 0.981688
+      }
+    }
+  },
+  "112": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 6,
+        "avg_score": 0.9830678333333335
+      }
+    }
+  },
+  "113": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 2,
+        "avg_score": 0.98449
+      }
+    }
+  },
+  "114": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 5,
+        "avg_score": 0.9867342000000001
+      }
+    }
+  },
+  "115": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 2,
+        "avg_score": 0.987509
+      }
+    }
+  },
+  "116": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 5,
+        "avg_score": 0.9889996
+      }
+    }
+  },
+  "117": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 2,
+        "avg_score": 0.989664
+      }
+    }
+  },
+  "118": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 5,
+        "avg_score": 0.9907138
+      }
+    }
+  },
+  "119": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 2,
+        "avg_score": 0.989539
+      }
+    }
+  },
+  "120": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 5,
+        "avg_score": 0.9823726
+      }
+    }
+  },
+  "121": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 2,
+        "avg_score": 0.9838089999999999
+      }
+    }
+  },
+  "122": {
+    "class_id": 3,
+    "class_name": "开放槽",
+    "confidence": 1.0,
+    "votes": {
+      "3": {
+        "class_name": "开放槽",
+        "view_count": 2,
+        "avg_score": 0.9720089999999999
+      }
+    }
+  },
+  "123": {
+    "class_id": 3,
+    "class_name": "开放槽",
+    "confidence": 1.0,
+    "votes": {
+      "3": {
+        "class_name": "开放槽",
+        "view_count": 3,
+        "avg_score": 0.9776696666666665
+      }
+    }
+  },
+  "124": {
+    "class_id": 3,
+    "class_name": "开放槽",
+    "confidence": 1.0,
+    "votes": {
+      "3": {
+        "class_name": "开放槽",
+        "view_count": 5,
+        "avg_score": 0.9493092000000001
+      }
+    }
+  },
+  "125": {
+    "class_id": 3,
+    "class_name": "开放槽",
+    "confidence": 1.0,
+    "votes": {
+      "3": {
+        "class_name": "开放槽",
+        "view_count": 3,
+        "avg_score": 0.932108
+      }
+    }
+  },
+  "126": {
+    "class_id": 3,
+    "class_name": "开放槽",
+    "confidence": 1.0,
+    "votes": {
+      "3": {
+        "class_name": "开放槽",
+        "view_count": 2,
+        "avg_score": 0.973517
+      }
+    }
+  },
+  "127": {
+    "class_id": 3,
+    "class_name": "开放槽",
+    "confidence": 1.0,
+    "votes": {
+      "3": {
+        "class_name": "开放槽",
+        "view_count": 4,
+        "avg_score": 0.97314775
+      }
+    }
+  },
+  "128": {
+    "class_id": 3,
+    "class_name": "开放槽",
+    "confidence": 1.0,
+    "votes": {
+      "3": {
+        "class_name": "开放槽",
+        "view_count": 2,
+        "avg_score": 0.9727785
+      }
+    }
+  },
+  "129": {
+    "class_id": 3,
+    "class_name": "开放槽",
+    "confidence": 1.0,
+    "votes": {
+      "3": {
+        "class_name": "开放槽",
+        "view_count": 2,
+        "avg_score": 0.9697545000000001
+      }
+    }
+  },
+  "130": {
+    "class_id": 3,
+    "class_name": "开放槽",
+    "confidence": 1.0,
+    "votes": {
+      "3": {
+        "class_name": "开放槽",
+        "view_count": 3,
+        "avg_score": 0.9692683333333333
+      }
+    }
+  },
+  "131": {
+    "class_id": 3,
+    "class_name": "开放槽",
+    "confidence": 1.0,
+    "votes": {
+      "3": {
+        "class_name": "开放槽",
+        "view_count": 2,
+        "avg_score": 0.9703425
+      }
+    }
+  },
+  "132": {
+    "class_id": 3,
+    "class_name": "开放槽",
+    "confidence": 1.0,
+    "votes": {
+      "3": {
+        "class_name": "开放槽",
+        "view_count": 3,
+        "avg_score": 0.9782889999999999
+      }
+    }
+  },
+  "133": {
+    "class_id": 3,
+    "class_name": "开放槽",
+    "confidence": 1.0,
+    "votes": {
+      "3": {
+        "class_name": "开放槽",
+        "view_count": 4,
+        "avg_score": 0.9742742499999999
+      }
+    }
+  },
+  "134": {
+    "class_id": 3,
+    "class_name": "开放槽",
+    "confidence": 1.0,
+    "votes": {
+      "3": {
+        "class_name": "开放槽",
+        "view_count": 2,
+        "avg_score": 0.9730449999999999
+      }
+    }
+  },
+  "135": {
+    "class_id": 3,
+    "class_name": "开放槽",
+    "confidence": 1.0,
+    "votes": {
+      "3": {
+        "class_name": "开放槽",
+        "view_count": 2,
+        "avg_score": 0.974398
+      }
+    }
+  },
+  "136": {
+    "class_id": 3,
+    "class_name": "开放槽",
+    "confidence": 1.0,
+    "votes": {
+      "3": {
+        "class_name": "开放槽",
+        "view_count": 4,
+        "avg_score": 0.9734935
+      }
+    }
+  },
+  "137": {
+    "class_id": 3,
+    "class_name": "开放槽",
+    "confidence": 1.0,
+    "votes": {
+      "3": {
+        "class_name": "开放槽",
+        "view_count": 2,
+        "avg_score": 0.972589
+      }
+    }
+  },
+  "138": {
+    "class_id": 3,
+    "class_name": "开放槽",
+    "confidence": 1.0,
+    "votes": {
+      "3": {
+        "class_name": "开放槽",
+        "view_count": 2,
+        "avg_score": 0.9701255
+      }
+    }
+  },
+  "139": {
+    "class_id": 3,
+    "class_name": "开放槽",
+    "confidence": 1.0,
+    "votes": {
+      "3": {
+        "class_name": "开放槽",
+        "view_count": 3,
+        "avg_score": 0.97097
+      }
+    }
+  },
+  "140": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "141": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "142": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "143": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "144": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "145": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "146": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "147": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "148": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "149": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "150": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "151": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "152": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "1": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "2": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "3": {
+    "class_id": 1,
+    "class_name": "宽体槽",
+    "confidence": 1.0,
+    "votes": {
+      "1": {
+        "class_name": "宽体槽",
+        "view_count": 1,
+        "avg_score": 0.987344
+      }
+    }
+  },
+  "4": {
+    "class_id": 1,
+    "class_name": "宽体槽",
+    "confidence": 1.0,
+    "votes": {
+      "1": {
+        "class_name": "宽体槽",
+        "view_count": 2,
+        "avg_score": 0.9944955
+      }
+    }
+  },
+  "5": {
+    "class_id": 1,
+    "class_name": "宽体槽",
+    "confidence": 1.0,
+    "votes": {
+      "1": {
+        "class_name": "宽体槽",
+        "view_count": 2,
+        "avg_score": 0.972567
+      }
+    }
+  },
+  "6": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "7": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "8": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "9": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "10": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "11": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "12": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "13": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "14": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "15": {
+    "class_id": 3,
+    "class_name": "开放槽",
+    "confidence": 1.0,
+    "votes": {
+      "3": {
+        "class_name": "开放槽",
+        "view_count": 2,
+        "avg_score": 0.9923555
+      }
+    }
+  },
+  "16": {
+    "class_id": 3,
+    "class_name": "开放槽",
+    "confidence": 1.0,
+    "votes": {
+      "3": {
+        "class_name": "开放槽",
+        "view_count": 3,
+        "avg_score": 0.99188
+      }
+    }
+  },
+  "17": {
+    "class_id": 0,
+    "class_name": "未检测到",
+    "confidence": 0.0,
+    "votes": {}
+  },
+  "18": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 3,
+        "avg_score": 0.9925066666666668
+      }
+    }
+  },
+  "19": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 2,
+        "avg_score": 0.9909950000000001
+      }
+    }
+  },
+  "20": {
+    "class_id": 4,
+    "class_name": "孔",
+    "confidence": 1.0,
+    "votes": {
+      "4": {
+        "class_name": "孔",
+        "view_count": 2,
+        "avg_score": 0.9909950000000001
+      }
+    }
+  }
+}

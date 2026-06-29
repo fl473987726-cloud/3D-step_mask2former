@@ -604,18 +604,13 @@ def load_step_faces(step_path, linear_deflection=0.1):
         polydata = face_to_polydata(face)
         if polydata is not None and polydata.GetNumberOfCells() > 0:
             center, area = get_face_center_and_area(face)
-            mapper = vtk.vtkPolyDataMapper()
-            mapper.SetInputData(polydata)
-            actor = vtk.vtkActor()
-            actor.SetMapper(mapper)
-            actor.GetProperty().SetInterpolationToPhong()
-
+            cell_count = polydata.GetNumberOfCells()
             records.append(
                 {
                     "face_id": face_id,
                     "face": face,
                     "polydata": polydata,
-                    "actor": actor,
+                    "cell_count": cell_count,
                     "center": center,
                     "area": area,
                     "bounds": list(polydata.GetBounds()),
@@ -651,7 +646,11 @@ class LabelTool(QMainWindow):
         self.shape = None
         self.face_records = []
         self.face_lookup = {}
-        self.actor_lookup = {}
+        self.merged_actor = None
+        self.merged_mapper = None
+        self.cell_colors = None  # vtkUnsignedCharArray
+        self.cell_to_face_id = []  # cell_id -> face_id
+        self.face_cell_ranges = {}  # face_id -> (start, end)
         self.undo_stack = []
         self.hover_face_id = None
         self.selected_face_id = None
@@ -1227,7 +1226,11 @@ class LabelTool(QMainWindow):
         self.step_path = ""
         self.face_records = []
         self.face_lookup = {}
-        self.actor_lookup = {}
+        self.merged_actor = None
+        self.merged_mapper = None
+        self.cell_colors = None
+        self.cell_to_face_id = []
+        self.face_cell_ranges = {}
         self.undo_stack = []
         self.hover_face_id = None
         self.selected_face_id = None
@@ -1302,7 +1305,6 @@ class LabelTool(QMainWindow):
         self.step_path = step_path
         self.face_records = face_records
         self.face_lookup = {record["face_id"]: record for record in face_records}
-        self.actor_lookup = {}
         self.undo_stack = list(entry["undo_stack"])
         self.hover_face_id = None
         self.selected_face_id = None
@@ -1310,15 +1312,48 @@ class LabelTool(QMainWindow):
         self.current_instance_id = None
         self._refresh_template_list()
 
+        # --- Merge all face polydata into one actor ---
+        append = vtk.vtkAppendPolyData()
+        self.cell_to_face_id = []
+        self.face_cell_ranges = {}
+        global_cell_id = 0
         for record in self.face_records:
-            actor_key = record["actor"].GetAddressAsString("")
-            self.actor_lookup[actor_key] = record["face_id"]
-            record["actor"].PickableOn()
+            face_id = record["face_id"]
+            n_cells = record["cell_count"]
+            self.face_cell_ranges[face_id] = (global_cell_id, global_cell_id + n_cells)
+            self.cell_to_face_id.extend([face_id] * n_cells)
+            global_cell_id += n_cells
+            append.AddInputData(record["polydata"])
+        append.Update()
+        merged = append.GetOutput()
+        total_cells = merged.GetNumberOfCells()
+
+        # Cell scalar colors array
+        self.cell_colors = vtk.vtkUnsignedCharArray()
+        self.cell_colors.SetNumberOfComponents(3)
+        self.cell_colors.SetNumberOfTuples(total_cells)
+        self.cell_colors.SetName("CellColors")
+
+        self.merged_mapper = vtk.vtkPolyDataMapper()
+        self.merged_mapper.SetInputData(merged)
+        self.merged_actor = vtk.vtkActor()
+        self.merged_actor.SetMapper(self.merged_mapper)
+        self.merged_actor.GetProperty().SetInterpolationToPhong()
+        self.merged_actor.GetProperty().SetOpacity(1.0)
+        self.merged_actor.GetProperty().SetAmbient(0.25)
+        self.merged_actor.GetProperty().SetDiffuse(0.75)
+        self.merged_actor.GetProperty().SetSpecular(0.05)
+        self.merged_actor.PickableOn()
+
+        # Assign instance/label data and initial colors
+        for record in self.face_records:
             record["instance_id"] = entry["face_to_instance"].get(record["face_id"])
             instance = self._get_instance_by_id(record["instance_id"])
             record["label_id"] = instance["category_id"] if instance is not None else entry["labels"].get(record["face_id"])
-            self.renderer.AddActor(record["actor"])
-            self._apply_actor_style(record["face_id"])
+
+        merged.GetCellData().SetScalars(self.cell_colors)
+        self._sync_cell_colors()
+        self.renderer.AddActor(self.merged_actor)
 
         self.renderer.ResetCamera()
         self.model_bounds = self.renderer.ComputeVisiblePropBounds()
@@ -1360,9 +1395,12 @@ class LabelTool(QMainWindow):
         y = int(window.GetSize()[1] - qt_pos.y() - 1)
         self.picker.Pick(x, y, 0, self.renderer)
         actor = self.picker.GetActor()
-        if actor is None:
+        if actor is None or actor is not self.merged_actor:
             return None
-        return self.actor_lookup.get(actor.GetAddressAsString(""))
+        cell_id = self.picker.GetCellId()
+        if cell_id < 0 or cell_id >= len(self.cell_to_face_id):
+            return None
+        return self.cell_to_face_id[cell_id]
 
     def _update_hover_face(self, qt_pos):
         self._set_hover_face(self._pick_face_id(qt_pos))
@@ -1679,40 +1717,48 @@ class LabelTool(QMainWindow):
                 "没有找到可新建为独立实例的相似结构。\n可能原因：阈值过高，或候选面已属于其他实例。",
             )
 
-    def _apply_actor_style(self, face_id):
+    def _get_face_rgb(self, face_id):
+        """Return (r, g, b) ints 0-255 for a face based on its label."""
         record = self.face_lookup.get(face_id)
         if record is None:
-            return
-        actor = record["actor"]
-        prop = actor.GetProperty()
-        prop.LightingOn()
-
+            return DEFAULT_FACE_COLOR
         label_id = record["label_id"]
         if label_id is None:
-            base_color = rgb_to_float(DEFAULT_FACE_COLOR)
-        else:
-            base_color = rgb_to_float(self.category_by_id[label_id]["color"])
+            return DEFAULT_FACE_COLOR
+        cat = self.category_by_id.get(label_id)
+        return cat["color"] if cat else DEFAULT_FACE_COLOR
 
-        prop.SetColor(*base_color)
-        prop.SetOpacity(1.0)
-        prop.SetAmbient(0.25)
-        prop.SetDiffuse(0.75)
-        prop.SetSpecular(0.05)
-        prop.SetEdgeVisibility(False)
-        prop.SetLineWidth(1.0)
+    def _sync_cell_colors(self):
+        """Rebuild the entire cell_colors array from current face labels."""
+        if self.cell_colors is None:
+            return
+        for record in self.face_records:
+            fid = record["face_id"]
+            start, end = self.face_cell_ranges[fid]
+            r, g, b = self._get_face_rgb(fid)
+            for ci in range(start, end):
+                self.cell_colors.SetTuple3(ci, r, g, b)
+        if self.merged_actor is not None:
+            self.merged_actor.GetMapper().Modified()
 
+    def _apply_actor_style(self, face_id):
+        """Update cell colors for a single face with visual feedback."""
+        record = self.face_lookup.get(face_id)
+        if record is None or self.cell_colors is None:
+            return
+        start, end = self.face_cell_ranges.get(face_id, (0, 0))
+        r, g, b = self._get_face_rgb(face_id)
+        # Apply visual feedback: brighten selected, dim others
         if face_id == self.selected_face_id:
-            prop.SetEdgeVisibility(True)
-            prop.SetEdgeColor(1.0, 0.6, 0.0)
-            prop.SetLineWidth(3.5)
+            r, g, b = min(255, r + 40), min(255, g + 40), min(255, b + 40)
         elif face_id in self.template_face_ids:
-            prop.SetEdgeVisibility(True)
-            prop.SetEdgeColor(0.0, 1.0, 0.5)
-            prop.SetLineWidth(2.8)
+            r, g, b = min(255, r + 20), min(255, g + 60), min(255, b + 20)
         elif face_id == self.hover_face_id:
-            prop.SetEdgeVisibility(True)
-            prop.SetEdgeColor(1.0, 0.85, 0.0)
-            prop.SetLineWidth(2.5)
+            r, g, b = min(255, r + 30), min(255, g + 30), min(255, b)
+        for ci in range(start, end):
+            self.cell_colors.SetTuple3(ci, r, g, b)
+        if self.merged_actor is not None:
+            self.merged_actor.GetMapper().Modified()
 
     def _refresh_face_list(self):
         previous_face_id = self.selected_face_id
@@ -1982,24 +2028,26 @@ class LabelTool(QMainWindow):
                 if not export_instances:
                     continue
 
+                # Set merged_actor to flat/unlit for mask export
+                prop = self.merged_actor.GetProperty()
+                prop.LightingOff()
+                prop.SetAmbient(1.0)
+                prop.SetDiffuse(0.0)
+                prop.SetSpecular(0.0)
+
                 self.renderer.SetBackground(0.0, 0.0, 0.0)
                 for instance_item in export_instances:
+                    instance_face_set = instance_item["face_ids"]
                     for record in self.face_records:
-                        actor = record["actor"]
-                        prop = actor.GetProperty()
-                        actor.SetVisibility(True)
-                        prop.SetOpacity(1.0)
-                        prop.SetEdgeVisibility(False)
-                        prop.SetLineWidth(1.0)
-                        prop.LightingOff()
-                        prop.SetAmbient(1.0)
-                        prop.SetDiffuse(0.0)
-                        prop.SetSpecular(0.0)
-                        if record["face_id"] in instance_item["face_ids"]:
-                            prop.SetColor(1.0, 1.0, 1.0)
+                        fid = record["face_id"]
+                        start, end = self.face_cell_ranges[fid]
+                        if fid in instance_face_set:
+                            for ci in range(start, end):
+                                self.cell_colors.SetTuple3(ci, 255, 255, 255)
                         else:
-                            prop.SetColor(0.0, 0.0, 0.0)
-
+                            for ci in range(start, end):
+                                self.cell_colors.SetTuple3(ci, 0, 0, 0)
+                    self.merged_actor.GetMapper().Modified()
                     self.renderer.ResetCameraClippingRange()
                     render_window.Render()
                     mask_rgb = capture_render_window_rgb(render_window)
@@ -2017,8 +2065,13 @@ class LabelTool(QMainWindow):
                         annotation_id += 1
 
                 self.renderer.SetBackground(*old_background)
-                for record in self.face_records:
-                    self._apply_actor_style(record["face_id"])
+                # Restore merged_actor lighting
+                prop = self.merged_actor.GetProperty()
+                prop.LightingOn()
+                prop.SetAmbient(0.25)
+                prop.SetDiffuse(0.75)
+                prop.SetSpecular(0.05)
+                self._sync_cell_colors()
                 self.renderer.ResetCameraClippingRange()
                 render_window.Render()
         finally:
@@ -2073,17 +2126,13 @@ class LabelTool(QMainWindow):
         try:
             self.renderer.SetBackground(1.0, 1.0, 1.0)
             self.renderer.AddActor(feature_edge_actor)
+            # Batch set all faces to default gray
             for record in self.face_records:
-                actor = record["actor"]
-                prop = actor.GetProperty()
-                prop.LightingOn()
-                prop.SetColor(*rgb_to_float(DEFAULT_FACE_COLOR))
-                prop.SetOpacity(1.0)
-                prop.SetAmbient(0.25)
-                prop.SetDiffuse(0.75)
-                prop.SetSpecular(0.05)
-                prop.SetEdgeVisibility(False)
-                prop.SetLineWidth(1.0)
+                fid = record["face_id"]
+                start, end = self.face_cell_ranges[fid]
+                for ci in range(start, end):
+                    self.cell_colors.SetTuple3(ci, *DEFAULT_FACE_COLOR)
+            self.merged_actor.GetMapper().Modified()
             render_window.Render()
             render_window.Render()
             for image_index, direction in enumerate(self._get_current_view_directions(), start=1):

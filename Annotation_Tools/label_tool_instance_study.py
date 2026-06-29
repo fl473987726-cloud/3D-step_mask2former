@@ -36,7 +36,7 @@ from PyQt5.QtWidgets import (
 
 import vtk
 from vtkmodules.qt.QVTKRenderWindowInteractor import QVTKRenderWindowInteractor
-from vtkmodules.util.numpy_support import vtk_to_numpy
+from vtkmodules.util.numpy_support import vtk_to_numpy, numpy_to_vtk
 
 from OCP.BRep import BRep_Tool
 from OCP.BRepAdaptor import BRepAdaptor_Surface
@@ -649,6 +649,7 @@ class LabelTool(QMainWindow):
         self.merged_actor = None
         self.merged_mapper = None
         self.cell_colors = None  # vtkUnsignedCharArray
+        self.cell_colors_np = None  # numpy view of cell_colors
         self.cell_to_face_id = []  # cell_id -> face_id
         self.face_cell_ranges = {}  # face_id -> (start, end)
         self.undo_stack = []
@@ -1229,6 +1230,7 @@ class LabelTool(QMainWindow):
         self.merged_actor = None
         self.merged_mapper = None
         self.cell_colors = None
+        self.cell_colors_np = None
         self.cell_to_face_id = []
         self.face_cell_ranges = {}
         self.undo_stack = []
@@ -1328,11 +1330,12 @@ class LabelTool(QMainWindow):
         merged = append.GetOutput()
         total_cells = merged.GetNumberOfCells()
 
-        # Cell scalar colors array
+        # Cell scalar colors array + numpy view (zero-copy)
         self.cell_colors = vtk.vtkUnsignedCharArray()
         self.cell_colors.SetNumberOfComponents(3)
         self.cell_colors.SetNumberOfTuples(total_cells)
         self.cell_colors.SetName("CellColors")
+        self.cell_colors_np = vtk_to_numpy(self.cell_colors).reshape(-1, 3)
 
         self.merged_mapper = vtk.vtkPolyDataMapper()
         self.merged_mapper.SetInputData(merged)
@@ -1729,36 +1732,33 @@ class LabelTool(QMainWindow):
         return cat["color"] if cat else DEFAULT_FACE_COLOR
 
     def _sync_cell_colors(self):
-        """Rebuild the entire cell_colors array from current face labels."""
-        if self.cell_colors is None:
+        """Rebuild entire cell_colors array from current face labels (numpy vectorized)."""
+        if self.cell_colors_np is None:
             return
         for record in self.face_records:
             fid = record["face_id"]
             start, end = self.face_cell_ranges[fid]
             r, g, b = self._get_face_rgb(fid)
-            for ci in range(start, end):
-                self.cell_colors.SetTuple3(ci, r, g, b)
-        if self.merged_actor is not None:
-            self.merged_actor.GetMapper().Modified()
+            self.cell_colors_np[start:end] = [r, g, b]
+        self.cell_colors.Modified()
 
     def _apply_actor_style(self, face_id):
-        """Update cell colors for a single face with visual feedback."""
-        record = self.face_lookup.get(face_id)
-        if record is None or self.cell_colors is None:
+        """Update cell colors for a single face with visual feedback (numpy fast path)."""
+        if self.cell_colors_np is None:
             return
-        start, end = self.face_cell_ranges.get(face_id, (0, 0))
+        rng = self.face_cell_ranges.get(face_id)
+        if rng is None:
+            return
+        start, end = rng
         r, g, b = self._get_face_rgb(face_id)
-        # Apply visual feedback: brighten selected, dim others
         if face_id == self.selected_face_id:
             r, g, b = min(255, r + 40), min(255, g + 40), min(255, b + 40)
         elif face_id in self.template_face_ids:
             r, g, b = min(255, r + 20), min(255, g + 60), min(255, b + 20)
         elif face_id == self.hover_face_id:
             r, g, b = min(255, r + 30), min(255, g + 30), min(255, b)
-        for ci in range(start, end):
-            self.cell_colors.SetTuple3(ci, r, g, b)
-        if self.merged_actor is not None:
-            self.merged_actor.GetMapper().Modified()
+        self.cell_colors_np[start:end] = [r, g, b]
+        self.cell_colors.Modified()
 
     def _refresh_face_list(self):
         previous_face_id = self.selected_face_id
@@ -2042,12 +2042,10 @@ class LabelTool(QMainWindow):
                         fid = record["face_id"]
                         start, end = self.face_cell_ranges[fid]
                         if fid in instance_face_set:
-                            for ci in range(start, end):
-                                self.cell_colors.SetTuple3(ci, 255, 255, 255)
+                            self.cell_colors_np[start:end] = [255, 255, 255]
                         else:
-                            for ci in range(start, end):
-                                self.cell_colors.SetTuple3(ci, 0, 0, 0)
-                    self.merged_actor.GetMapper().Modified()
+                            self.cell_colors_np[start:end] = [0, 0, 0]
+                    self.cell_colors.Modified()
                     self.renderer.ResetCameraClippingRange()
                     render_window.Render()
                     mask_rgb = capture_render_window_rgb(render_window)
@@ -2126,13 +2124,9 @@ class LabelTool(QMainWindow):
         try:
             self.renderer.SetBackground(1.0, 1.0, 1.0)
             self.renderer.AddActor(feature_edge_actor)
-            # Batch set all faces to default gray
-            for record in self.face_records:
-                fid = record["face_id"]
-                start, end = self.face_cell_ranges[fid]
-                for ci in range(start, end):
-                    self.cell_colors.SetTuple3(ci, *DEFAULT_FACE_COLOR)
-            self.merged_actor.GetMapper().Modified()
+            # Batch set all faces to default gray (numpy fast)
+            self.cell_colors_np[:] = DEFAULT_FACE_COLOR
+            self.cell_colors.Modified()
             render_window.Render()
             render_window.Render()
             for image_index, direction in enumerate(self._get_current_view_directions(), start=1):

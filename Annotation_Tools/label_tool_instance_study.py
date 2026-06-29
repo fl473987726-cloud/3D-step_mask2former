@@ -3160,21 +3160,17 @@ class LabelTool(QMainWindow):
 
         try:
             # Step 1: 生成多视角图 (0% ~ 30%)
+            # 直接复用 UI 的 merged_actor + cell_colors_np，不再重新读取 STEP 文件
             self.pre_recog_status.setText("Step 1/3: 生成多视角图...")
-            _update_progress(2, "加载STEP...")
+            _update_progress(2, "复用内存模型渲染...")
 
             t_step = time.time()
 
-            data = giv.load_step_and_compute_data(self.step_path)
-            if data is None:
-                raise RuntimeError("无法读取STEP文件")
-
-            num_faces = data["face_count"]
-            directions = giv.get_dodecahedron_view_directions()
+            num_faces = len(self.face_records)
+            directions = get_dodecahedron_view_directions()
             num_views = len(directions)
 
             fixed_colors, color_to_face_id = generate_unique_colors(num_faces)
-            views_colors = [fixed_colors] * num_views
 
             semantic_dir = os.path.join(step_output, "semantic_views")
             unique_dir = os.path.join(step_output, "unique_views")
@@ -3184,11 +3180,80 @@ class LabelTool(QMainWindow):
             unique_paths = [os.path.join(unique_dir, f"{v+1:06d}.png") for v in range(num_views)]
 
             _update_progress(5, f"渲染 {num_views} 视角...")
-            giv.render_12_views(
-                data["faces"], data["edges"], data["bounds"],
-                semantic_paths, unique_paths, views_colors,
-                view_directions=directions,
-            )
+
+            # --- 劫持渲染窗口，极速截图 ---
+            render_window = self.vtk_widget.GetRenderWindow()
+            old_size = render_window.GetSize()
+            old_camera = vtk.vtkCamera()
+            old_camera.DeepCopy(self.renderer.GetActiveCamera())
+            old_background = self.renderer.GetBackground()
+
+            prop = self.merged_actor.GetProperty()
+            prop.LightingOff()
+            prop.SetAmbient(1.0)
+            prop.SetDiffuse(0.0)
+            prop.SetSpecular(0.0)
+
+            camera = self.renderer.GetActiveCamera()
+            camera.ParallelProjectionOn()
+
+            if self.model_bounds is not None:
+                center = (
+                    (self.model_bounds[0] + self.model_bounds[1]) / 2.0,
+                    (self.model_bounds[2] + self.model_bounds[3]) / 2.0,
+                    (self.model_bounds[4] + self.model_bounds[5]) / 2.0,
+                )
+                max_dim = max(
+                    self.model_bounds[1] - self.model_bounds[0],
+                    self.model_bounds[3] - self.model_bounds[2],
+                    self.model_bounds[5] - self.model_bounds[4],
+                )
+            else:
+                center = self.renderer.GetActiveCamera().GetFocalPoint()
+                max_dim = 1.0
+            if max_dim < 0.001:
+                max_dim = 1.0
+            dist = max_dim * 3
+            aspect_ratio = OUTPUT_WIDTH / OUTPUT_HEIGHT
+
+            self.renderer.SetBackground(1.0, 1.0, 1.0)
+            render_window.SetSize(OUTPUT_WIDTH, OUTPUT_HEIGHT)
+
+            try:
+                for view_idx, direction in enumerate(directions, start=1):
+                    # --- Unique 图：每个面不同颜色 ---
+                    for face_idx, record in enumerate(self.face_records):
+                        fid = record["face_id"]
+                        start, end = self.face_cell_ranges[fid]
+                        self.cell_colors_np[start:end] = fixed_colors[face_idx]
+                    self.cell_colors.Modified()
+
+                    self._set_camera_for_view(camera, center, dist, direction, aspect_ratio)
+                    self.renderer.ResetCameraClippingRange()
+                    render_window.Render()
+                    unique_rgb = capture_render_window_rgb(render_window)
+                    write_png_rgb(unique_paths[view_idx - 1], unique_rgb)
+
+                    # --- Semantic 图：所有面同色（灰色），用于 Mask2Former 输入 ---
+                    self.cell_colors_np[:] = DEFAULT_FACE_COLOR
+                    self.cell_colors.Modified()
+
+                    render_window.Render()
+                    semantic_rgb = capture_render_window_rgb(render_window)
+                    write_png_rgb(semantic_paths[view_idx - 1], semantic_rgb)
+
+            finally:
+                # 恢复 UI 原貌
+                render_window.SetSize(old_size[0], old_size[1])
+                camera.DeepCopy(old_camera)
+                self.renderer.SetBackground(*old_background)
+                prop.LightingOn()
+                prop.SetAmbient(0.25)
+                prop.SetDiffuse(0.75)
+                prop.SetSpecular(0.05)
+                self._sync_cell_colors()
+                self.renderer.ResetCameraClippingRange()
+                render_window.Render()
 
             mapping_path = os.path.join(step_output, "color_face_id_map.json")
             serializable_map = {f"{r},{g},{b}": fid for (r, g, b), fid in color_to_face_id.items()}

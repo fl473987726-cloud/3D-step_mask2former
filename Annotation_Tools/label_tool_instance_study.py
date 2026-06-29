@@ -697,6 +697,16 @@ class LabelTool(QMainWindow):
         self.category_list.currentRowChanged.connect(self.on_category_changed)
         left_panel.addWidget(self.category_list)
 
+        self.btn_add_category = QPushButton("➕ 添加新特征类型")
+        self.btn_add_category.setStyleSheet("background-color: #E91E63; color: white; font-weight: bold;")
+        self.btn_add_category.clicked.connect(self._add_new_category)
+        left_panel.addWidget(self.btn_add_category)
+
+        self.btn_remove_category = QPushButton("➖ 删除当前特征类型")
+        self.btn_remove_category.setStyleSheet("background-color: #795548; color: white; font-weight: bold;")
+        self.btn_remove_category.clicked.connect(self._remove_current_category)
+        left_panel.addWidget(self.btn_remove_category)
+
         self.btn_new_instance = QPushButton("创建当前类别新实例")
         self.btn_new_instance.clicked.connect(self.create_current_instance)
         left_panel.addWidget(self.btn_new_instance)
@@ -902,6 +912,72 @@ class LabelTool(QMainWindow):
             item.setData(Qt.UserRole, category["id"])
             self.category_list.addItem(item)
         self.category_list.setCurrentRow(0)
+
+    def _add_new_category(self):
+        """弹出对话框，让用户输入新特征类型的中文名、英文名、颜色"""
+        from PyQt5.QtWidgets import QColorDialog, QInputDialog
+
+        # 输入中文名
+        display_name, ok1 = QInputDialog.getText(
+            self, "添加新特征类型", "请输入中文名称：")
+        if not ok1 or not display_name.strip():
+            return
+
+        # 输入英文名
+        name, ok2 = QInputDialog.getText(
+            self, "添加新特征类型", "请输入英文名称：")
+        if not ok2 or not name.strip():
+            return
+
+        # 选择颜色
+        color = QColorDialog.getColor(QColor(128, 128, 128), self, "选择特征颜色")
+        if not color.isValid():
+            return
+
+        # 计算新id
+        max_id = max(c["id"] for c in self.categories) if self.categories else 0
+        new_id = max_id + 1
+
+        self.categories.append({
+            "id": new_id,
+            "name": name.strip(),
+            "display_name": display_name.strip(),
+            "color": (color.red(), color.green(), color.blue()),
+        })
+
+        self._refresh_category_list()
+
+        # 自动选中新添加的类型
+        self.category_list.setCurrentRow(self.category_list.count() - 1)
+
+        self.status_label.setText(
+            f"已添加新特征: [{new_id}] {display_name.strip()} / {name.strip()}\n"
+            f"可点击「创建当前类别新实例」后标注面。")
+
+    def _remove_current_category(self):
+        """删除当前选中的特征类型（仅能删除用户添加的，不能删除预设的1-7）"""
+        row = self.category_list.currentRow()
+        if row < 0:
+            return
+        item = self.category_list.item(row)
+        if item is None:
+            return
+        cat_id = item.data(Qt.UserRole)
+        if cat_id <= 7:
+            QMessageBox.warning(self, "提示", "预设类型(1-7)不可删除")
+            return
+
+        cat_name = self.categories[row].get("display_name", "未知")
+        reply = QMessageBox.question(
+            self, "确认删除",
+            f"确定删除特征类型「{cat_name}」(id={cat_id})？\n"
+            f"已使用该类型的实例标注仍然保留。")
+        if reply != QMessageBox.Yes:
+            return
+
+        self.categories.pop(row)
+        self._refresh_category_list()
+        self.status_label.setText(f"已删除特征类型: [{cat_id}] {cat_name}")
 
     def on_category_changed(self, row):
         if row < 0:
@@ -1740,7 +1816,7 @@ class LabelTool(QMainWindow):
             return None
         try:
             with open(manifest_path, "r", encoding="utf-8") as f:
-                manifest = json.load(f)
+                manifest = std_json.load(f)
             # 向后兼容：旧版 entries 用 "type": "xxx"，新版用 "types": ["xxx"]
             for img_name, entry in manifest.get("entries", {}).items():
                 if "type" in entry and "types" not in entry:

@@ -467,24 +467,31 @@ if __name__ == "__main__":
 # ==================== Step 3: 回传3D ====================
 
 def extract_face_id_from_unique(unique_img_path, color_to_face_id):
-    """从unique图解码每个像素的face_id
+    """从unique图解码每个像素的face_id（查表法，O(1) 每像素）
+
     使用 color_to_face_id 映射表查找，背景像素(0,0,0) → face_id = 0
+    加速：从逐通道逐mask扫描 → 建256³查找表后一次性查表
     """
     img = np.array(Image.open(unique_img_path).convert("RGB"))
     h, w = img.shape[:2]
-    face_id_map = np.zeros((h, w), dtype=np.int32)
 
-    # 构建 RGB numpy 快速查找：先建 (R,G,B) → face_id 的dict
+    # 建256³查表：RGB三维一次查 face_id
+    lut = np.zeros((256, 256, 256), dtype=np.int32)
     for (r, g, b), fid in color_to_face_id.items():
-        mask = (img[:, :, 0] == r) & (img[:, :, 1] == g) & (img[:, :, 2] == b)
-        face_id_map[mask] = fid
+        lut[r, g, b] = fid
 
+    flat = img.reshape(-1, 3)
+    face_id_map = lut[flat[:, 0], flat[:, 1], flat[:, 2]].reshape(h, w)
     return face_id_map
 
 
 def back_project_single_view(seg_path, info_path, unique_img_path, face_votes, color_to_face_id):
     """将单个视角的预测结果回传到3D面"""
     # 读取分割结果
+    seg = np.array(Image.open(seg_path.replace("_seg.npy", ".png")).convert("L")) if False else (
+        np.load(seg_path).astype(np.int32)
+    ) if seg_path.endswith(".npy") else np.load(seg_path).astype(np.int32)
+    # seg 是 .npy 文件
     seg = np.load(seg_path).astype(np.int32)
     with open(info_path, "r") as f:
         segments_info = json.load(f)
@@ -496,44 +503,33 @@ def back_project_single_view(seg_path, info_path, unique_img_path, face_votes, c
     seg_to_class = {}
     for s in segments_info:
         if s["label_id"] != 0:  # 跳过背景
-            seg_to_class[s["id"]] = {"label_id": s["label_id"], "score": s["score"]}
+            seg_to_class[s["id"]] = s["label_id"]  # 只保留label_id，加速
 
-    # 遍历每个像素，将预测结果投票到对应face
-    unique_face_ids = np.unique(face_id_map)
-    for face_id_raw in unique_face_ids:
-        if face_id_raw <= 0:
+    # 向量化投票：一次统计所有非背景像素
+    # face_id_map.shape == seg.shape == (H, W)
+    # 只处理非背景 seg 像素 (seg != 0) 且非背景 face_id (face_id != 0)
+    non_bg = (seg != 0) & (face_id_map != 0)
+    if not non_bg.any():
+        return
+
+    valid_fids = face_id_map[non_bg]
+    valid_segs = seg[non_bg]
+
+    # 一次成对统计 (face_id, pred_label) → 计数
+    pairs = np.stack([valid_fids, valid_segs], axis=-1)
+    unique_pairs, counts = np.unique(pairs, axis=0, return_counts=True)
+
+    # 按 face_id 聚合
+    for (fid, seg_id), cnt in zip(unique_pairs, counts):
+        seg_id_int = int(seg_id)
+        if seg_id_int not in seg_to_class:
             continue
-        face_id = int(face_id_raw)
-        face_mask = (face_id_map == face_id)
-        face_pixels_seg = seg[face_mask]
-
-        # 统计该面内各segment的像素数
-        seg_pixel_counts = defaultdict(int)
-        for px in face_pixels_seg:
-            if px != 0 and px in seg_to_class:
-                seg_pixel_counts[px] += 1
-
-        if not seg_pixel_counts:
-            continue
-
-        # 找到占比最大的segment
-        best_seg = max(seg_pixel_counts, key=seg_pixel_counts.get)
-        best_count = seg_pixel_counts[best_seg]
-        total_face_pixels = int(face_mask.sum())
-        ratio = best_count / total_face_pixels if total_face_pixels > 0 else 0
-
-        if ratio < 0.3:  # 投票阈值
-            continue
-
-        pred_class = seg_to_class[best_seg]["label_id"]
-        score = seg_to_class[best_seg]["score"]
-
-        if face_id not in face_votes:
-            face_votes[face_id] = defaultdict(lambda: {"count": 0, "total_score": 0.0, "total_pixels": 0})
-
-        face_votes[face_id][pred_class]["count"] += 1
-        face_votes[face_id][pred_class]["total_score"] += score
-        face_votes[face_id][pred_class]["total_pixels"] += best_count
+        label_id = seg_to_class[seg_id_int]
+        fid_int = int(fid)
+        if fid_int not in face_votes:
+            face_votes[fid_int] = defaultdict(lambda: {"count": 0, "total_score": 0.0, "total_pixels": 0})
+        face_votes[fid_int][label_id]["count"] += 1
+        face_votes[fid_int][label_id]["total_pixels"] += int(cnt)
 
 
 def aggregate_votes(face_votes, num_faces):

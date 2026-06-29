@@ -18,6 +18,7 @@ import json
 import math
 
 import numpy as np
+import cv2
 import pyvista as pv
 
 from OCP.STEPControl import STEPControl_Reader
@@ -285,7 +286,13 @@ def setup_plotter(bounds):
 
 
 def render_encoded_views(face_items, bounds, image_paths, view_directions=None):
-    """渲染GB编码视图
+    """渲染GB编码视图（带光照效果）
+
+    两趟渲染合成：
+      Pass 1 — 白色面 + 光照 → 提取光照强度图 (H×W×3 float)
+      Pass 2 — 编码色面 + 无光照 → 提取纯色图   (H×W×3 uint8)
+    合成：对每个非背景像素，用光照因子调制编码色，
+    使最终图既有正确的 RGB 编码，又有光照立体感。
 
     Args:
         face_items: 面列表
@@ -302,13 +309,20 @@ def render_encoded_views(face_items, bounds, image_paths, view_directions=None):
     aspect_ratio = OUTPUT_WIDTH / OUTPUT_HEIGHT
     plotter, center, dist = setup_plotter(bounds)
 
+    # --- 添加所有面（先不设颜色，后面逐趟改） ---
+    actors = []
     for item in face_items:
-        plotter.add_mesh(
+        actor = plotter.add_mesh(
             item["mesh"],
-            color=rgb_to_float(item["encoded_rgb"]),
-            lighting=False,
-            smooth_shading=False,
+            color=(1.0, 1.0, 1.0),   # 临时白色，Pass 1 用
+            lighting=True,
+            smooth_shading=True,
+            ambient=0.3,
+            diffuse=0.7,
+            specular=0.15,
+            specular_power=20,
         )
+        actors.append(actor)
 
     camera_records = []
     for view_index, direction in enumerate(view_directions, start=1):
@@ -324,8 +338,62 @@ def render_encoded_views(face_items, bounds, image_paths, view_directions=None):
         )
         plotter.camera_position = [cam_pos, center, viewup]
         plotter.camera.SetParallelScale(parallel_scale)
+
+        # ==========================================================
+        # Pass 1 — 白色面 + 光照 → 光照强度图
+        # 所有面保持白色，靠光照产生明暗变化
+        # ==========================================================
+        for actor in actors:
+            prop = actor.GetProperty()
+            prop.SetColor(1.0, 1.0, 1.0)
+            prop.LightingOn()
+            prop.SetAmbient(0.3)
+            prop.SetDiffuse(0.7)
+            prop.SetSpecular(0.15)
+            prop.SetSpecularPower(20)
+        plotter.enable_lightkit()
         plotter.render()
-        plotter.screenshot(image_paths[view_index - 1])
+        light_img = plotter.screenshot(None)  # H×W×3 uint8 (BGR)
+
+        # ==========================================================
+        # Pass 2 — 编码色面 + 无光照 → 纯色图
+        # ==========================================================
+        for actor, item in zip(actors, face_items):
+            prop = actor.GetProperty()
+            prop.SetColor(*rgb_to_float(item["encoded_rgb"]))
+            prop.LightingOff()
+            prop.SetAmbient(1.0)
+            prop.SetDiffuse(0.0)
+            prop.SetSpecular(0.0)
+        plotter.render()
+        color_img = plotter.screenshot(None)  # H×W×3 uint8 (BGR)
+
+        # ==========================================================
+        # 合成：光照因子 × 编码色
+        # ==========================================================
+        light_rgb = light_img[:, :, ::-1].astype(np.float32)  # BGR→RGB
+        color_rgb = color_img[:, :, ::-1].astype(np.float32)  # BGR→RGB
+
+        # 非背景掩码：纯色图中 RGB 不全为 255 的像素
+        is_fg = np.any(color_rgb < 250, axis=2)  # (H, W) bool
+
+        # 光照因子：白色渲染的亮度 (0~1)
+        light_gray = np.mean(light_rgb, axis=2) / 255.0  # (H, W)
+
+        # 限制光照因子下界，防止暗面编码值丢失
+        light_gray = np.clip(light_gray, 0.35, 1.0)  # (H, W)
+
+        # 合成：仅对前景像素调制
+        combined = np.where(
+            is_fg[:, :, np.newaxis],
+            np.clip(color_rgb * light_gray[:, :, np.newaxis], 0, 255),
+            color_rgb,  # 背景保持白色
+        ).astype(np.uint8)
+
+        # 保存合成图
+        combined_bgr = combined[:, :, ::-1]
+        image_path = image_paths[view_index - 1]
+        cv2.imencode(".png", combined_bgr)[1].tofile(image_path)
 
         camera_records.append({
             "view_index": view_index,
